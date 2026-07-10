@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'site/**'
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -35,5 +34,6 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy site/out --project-name=wellbeinghealth-site --commit-dirty=true
+          accountId: 6bde2d07259fb28c49f960364300fa23
+          command: pages deploy out --project-name=wellbeinghealth-site --commit-dirty=true
+          workingDirectory: site
