@@ -12,7 +12,8 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const post = await getPostData(slug);
+  const decodedSlug = decodeURIComponent(slug);
+  const post = await getPostData(decodedSlug);
   return {
     title: post.title,
     description: post.metaDescription || post.excerpt,
@@ -44,7 +45,8 @@ function formatDate(dateStr: string) {
 
 export default async function PostPage({ params }: Props) {
   const { slug } = await params;
-  const post = await getPostData(slug);
+  const decodedSlug = decodeURIComponent(slug);
+  const post = await getPostData(decodedSlug);
   const emoji = CATEGORY_EMOJI[post.category] || "💚";
 
   return (
