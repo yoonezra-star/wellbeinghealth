@@ -1,0 +1,6 @@
+name = "wellbeinghealth"
+pages_build_output_dir = "site/out"
+
+[build]
+command = "npm run build"
+cwd = "site"
