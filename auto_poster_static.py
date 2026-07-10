@@ -188,6 +188,35 @@ def git_push(filepath: str, post_title: str):
         return False
 
 
+def deploy_cloudflare():
+    """Wrangler를 이용해 로컬에서 직접 Cloudflare Pages로 빌드 및 배포"""
+    try:
+        site_path = os.path.join(GITHUB_REPO_PATH, "site")
+        print("⚙️ Next.js 정적 빌드 시작...")
+        
+        # Windows 환경 대응: npm.cmd, npx.cmd 사용
+        npm_cmd = "npm.cmd" if os.name == "nt" else "npm"
+        npx_cmd = "npx.cmd" if os.name == "nt" else "npx"
+
+        # 1. 빌드
+        subprocess.run([npm_cmd, "run", "build"], cwd=site_path, check=True)
+        print("✅ 빌드 완료! Cloudflare Pages 배포 시작...")
+        
+        # 2. 배포
+        deploy_cmd = [
+            npx_cmd, "wrangler", "pages", "deploy", "out",
+            "--project-name", "wellbeinghealth-site",
+            "--commit-dirty=true"
+        ]
+        subprocess.run(deploy_cmd, cwd=site_path, check=True)
+        print("🚀 Cloudflare Pages 배포 완료!")
+        return True
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Cloudflare 배포 오류: {e}")
+        return False
+
+
+
 def send_telegram(message: str):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         return
@@ -232,14 +261,15 @@ def post_job(time_of_day: str = "오전"):
 
     filepath = save_as_markdown(post)
     pushed = git_push(filepath, post["title"])
+    deployed = deploy_cloudflare()
 
-    if pushed:
+    if pushed or deployed:
         msg = (
             f"🎉 <b>[웰빙헬스] 새 포스트 자동 발행!</b>\n\n"
             f"📝 <b>제목:</b> {post['title']}\n"
             f"🔑 <b>키워드:</b> {post['focus_keyword']}\n"
             f"🏷️ <b>카테고리:</b> {post['category']}\n"
-            f"🌐 GitHub push → Cloudflare Pages 빌드 중..."
+            f"🌐 배포 상태: {'성공' if deployed else '실패'}"
         )
         send_telegram(msg)
 
