@@ -2,10 +2,17 @@
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import PostCard from "@/components/PostCard";
-import { CATEGORIES } from "@/lib/posts";
 import type { PostMeta } from "@/lib/posts";
 
-const ALL_CATEGORIES = CATEGORIES;
+const ALL_CATEGORIES = [
+  "전체",
+  "운동",
+  "다이어트",
+  "건강식단",
+  "생활습관",
+  "멘탈케어",
+  "전문가칼럼",
+];
 
 function BlogContent({ allPosts }: { allPosts: PostMeta[] }) {
   const searchParams = useSearchParams();
