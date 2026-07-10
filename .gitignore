@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Env
+.env
+.env.local
+
+# Next.js
+site/node_modules/
+site/.next/
+site/out/
+
+# Logs
+*.log
+remote_cron.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Scratch files
+scratch_*.py
+scratch_*.js
