@@ -16,6 +16,7 @@ export interface PostMeta {
   focusKeyword?: string;
   metaDescription?: string;
   thumbnail?: string;
+  updated?: string;
 }
 
 export interface Post extends PostMeta {
@@ -45,6 +46,7 @@ export function getSortedPostsData(): PostMeta[] {
         focusKeyword: data.focusKeyword || "",
         metaDescription: data.metaDescription || "",
         thumbnail: data.thumbnail || "",
+        updated: data.updated || "",
       };
     });
 
@@ -70,10 +72,16 @@ export async function getPostData(slug: string): Promise<Post> {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
+  const normalizedContent = content
+    .replace(/&#(\d+);/g, (_, code: string) => String.fromCodePoint(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code: string) => String.fromCodePoint(parseInt(code, 16)))
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&");
+
   const processedContent = await remark()
     .use(remarkGfm)
     .use(remarkHtml, { sanitize: false })
-    .process(content);
+    .process(normalizedContent);
 
   const contentHtml = processedContent.toString();
 
@@ -86,8 +94,20 @@ export async function getPostData(slug: string): Promise<Post> {
     focusKeyword: data.focusKeyword || "",
     metaDescription: data.metaDescription || "",
     thumbnail: data.thumbnail || "",
+    updated: data.updated || "",
     contentHtml,
   };
+}
+
+export function getRelatedPosts(post: PostMeta, limit = 3): PostMeta[] {
+  return getSortedPostsData()
+    .filter((candidate) => candidate.slug !== post.slug)
+    .sort((a, b) => {
+      const categoryScoreA = a.category === post.category ? 2 : 0;
+      const categoryScoreB = b.category === post.category ? 2 : 0;
+      return categoryScoreB - categoryScoreA || (a.date < b.date ? 1 : -1);
+    })
+    .slice(0, limit);
 }
 
 export const CATEGORIES = [

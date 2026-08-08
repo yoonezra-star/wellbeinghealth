@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "블로그 — 전체 아티클",
   description:
     "Wellbeing Health의 모든 건강 아티클을 카테고리별로 탐색하세요. 운동, 다이어트, 건강식단, 생활습관, 멘탈케어.",
+  alternates: { canonical: "/blog/" },
 };
 
 export default function BlogPage() {

@@ -33,6 +33,11 @@ export default function Footer() {
             <ul>
               <li><Link href="/">홈</Link></li>
               <li><Link href="/blog">전체 글</Link></li>
+              <li><Link href="/about">사이트 소개</Link></li>
+              <li><Link href="/editorial-policy">편집정책</Link></li>
+              <li><Link href="/contact">문의하기</Link></li>
+              <li><Link href="/privacy">개인정보처리방침</Link></li>
+              <li><Link href="/disclaimer">건강정보 면책</Link></li>
             </ul>
           </div>
         </div>

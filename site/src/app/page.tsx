@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Wellbeing Health — 건강한 삶을 위한 웰빙 가이드",
   description:
     "운동, 다이어트, 건강식단, 생활습관, 멘탈케어까지 — 실생활에서 바로 쓸 수 있는 건강 정보를 전달합니다.",
+  alternates: { canonical: "/" },
 };
 
 export default function HomePage() {
