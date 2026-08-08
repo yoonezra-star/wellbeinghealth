@@ -11,6 +11,7 @@ const notoSansKR = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://wellbeinghealth.co.kr"),
   title: {
     default: "Wellbeing Health — 건강한 삶을 위한 웰빙 가이드",
     template: "%s | Wellbeing Health",

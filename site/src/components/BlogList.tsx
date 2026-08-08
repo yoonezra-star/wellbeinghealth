@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import PostCard from "@/components/PostCard";
 import type { PostMeta } from "@/lib/posts";
 
@@ -16,6 +16,8 @@ const ALL_CATEGORIES = [
 
 function BlogContent({ allPosts }: { allPosts: PostMeta[] }) {
   const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
   const initialCat = searchParams.get("cat") || "전체";
   const [activeCategory, setActiveCategory] = useState(initialCat);
 
@@ -29,6 +31,16 @@ function BlogContent({ allPosts }: { allPosts: PostMeta[] }) {
       ? allPosts
       : allPosts.filter((p) => p.category === activeCategory);
 
+  function selectCategory(category: string) {
+    const params = new URLSearchParams(searchParams.toString());
+    if (category === "전체") {
+      params.delete("cat");
+    } else {
+      params.set("cat", category);
+    }
+    router.replace(params.size ? `${pathname}?${params.toString()}` : pathname, { scroll: false });
+  }
+
   return (
     <>
       {/* Category Filter */}
@@ -37,7 +49,7 @@ function BlogContent({ allPosts }: { allPosts: PostMeta[] }) {
           <button
             key={cat}
             className={`category-btn ${activeCategory === cat ? "active" : ""}`}
-            onClick={() => setActiveCategory(cat)}
+            onClick={() => selectCategory(cat)}
           >
             {cat}
           </button>

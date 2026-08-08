@@ -24,7 +24,16 @@ export default function PostCard({ post }: { post: PostMeta }) {
 
   return (
     <Link href={`/blog/${post.slug}`} className="post-card">
-      <div className="post-card__thumbnail-placeholder">{emoji}</div>
+      {post.thumbnail ? (
+        <img
+          className="post-card__thumbnail"
+          src={post.thumbnail}
+          alt=""
+          loading="lazy"
+        />
+      ) : (
+        <div className="post-card__thumbnail-placeholder">{emoji}</div>
+      )}
       <div className="post-card__body">
         <span className={`post-card__category cat-${post.category}`}>
           {post.category}

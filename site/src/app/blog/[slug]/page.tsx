@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.metaDescription || post.excerpt,
       type: "article",
       publishedTime: post.date,
+      images: post.thumbnail ? [{ url: post.thumbnail, alt: post.title }] : undefined,
     },
   };
 }
@@ -74,22 +75,11 @@ export default async function PostPage({ params }: Props) {
         </div>
       </header>
 
-      {/* Thumbnail placeholder */}
-      <div
-        style={{
-          width: "100%",
-          aspectRatio: "16/9",
-          background: "linear-gradient(135deg, var(--bg-card) 0%, #263348 100%)",
-          borderRadius: "var(--radius)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontSize: "4rem",
-          marginBottom: "40px",
-        }}
-      >
-        {emoji}
-      </div>
+      {post.thumbnail ? (
+        <img className="article-thumbnail" src={post.thumbnail} alt="" />
+      ) : (
+        <div className="article-thumbnail-placeholder">{emoji}</div>
+      )}
 
       {/* Content */}
       <article
