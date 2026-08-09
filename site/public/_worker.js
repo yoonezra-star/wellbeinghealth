@@ -503,6 +503,12 @@ const PREFIX_REDIRECTS = [
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+
+    if (url.hostname === "www.wellbeinghealth.co.kr") {
+      url.hostname = "wellbeinghealth.co.kr";
+      return Response.redirect(url.toString(), 301);
+    }
+
     let pathname = url.pathname;
 
     try {
