@@ -24,7 +24,7 @@ export default function Footer() {
               <li><Link href="/blog?cat=건강식단">건강식단</Link></li>
               <li><Link href="/blog?cat=생활습관">생활습관</Link></li>
               <li><Link href="/blog?cat=멘탈케어">멘탈케어</Link></li>
-              <li><Link href="/blog?cat=전문가칼럼">전문가칼럼</Link></li>
+              <li><Link href="/blog?cat=건강해설">건강해설</Link></li>
             </ul>
           </div>
 

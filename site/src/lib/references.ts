@@ -91,7 +91,7 @@ const CATEGORY_REFERENCES: Record<string, EditorialReference[]> = {
   건강식단: [REFERENCES.healthyDiet, REFERENCES.kdca],
   생활습관: [REFERENCES.kdca, REFERENCES.sleep],
   멘탈케어: [REFERENCES.mentalHealth, REFERENCES.stress],
-  전문가칼럼: [REFERENCES.kdca, REFERENCES.healthyDiet],
+  건강해설: [REFERENCES.kdca, REFERENCES.healthyDiet],
   건강: [REFERENCES.kdca, REFERENCES.healthyDiet],
 };
 

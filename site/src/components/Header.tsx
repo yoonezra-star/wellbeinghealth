@@ -42,7 +42,7 @@ export default function Header() {
             <Link href="/blog?cat=건강식단" onClick={closeMenu}>건강식단</Link>
             <Link href="/blog?cat=생활습관" onClick={closeMenu}>생활습관</Link>
             <Link href="/blog?cat=멘탈케어" onClick={closeMenu}>멘탈케어</Link>
-            <Link href="/blog?cat=전문가칼럼" onClick={closeMenu}>전문가칼럼</Link>
+            <Link href="/blog?cat=건강해설" onClick={closeMenu}>건강해설</Link>
           </nav>
         )}
       </div>

@@ -11,7 +11,7 @@ const ALL_CATEGORIES = [
   "건강식단",
   "생활습관",
   "멘탈케어",
-  "전문가칼럼",
+  "건강해설",
 ];
 
 function BlogContent({ allPosts }: { allPosts: PostMeta[] }) {
