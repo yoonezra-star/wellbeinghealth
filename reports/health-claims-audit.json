@@ -2,72 +2,12 @@
   "generated": "2026-08-09",
   "summary": {
     "audited": 106,
-    "high": 53,
-    "review": 42,
-    "lower": 11,
-    "noDirectLinks": 84
+    "high": 48,
+    "review": 44,
+    "lower": 14,
+    "noDirectLinks": 79
   },
   "results": [
-    {
-      "fileName": "2026-05-16-간헐적-단식으로-다이어트-성공하기-효과와-주의사.md",
-      "title": "간헐적 단식 주의사항: 다이어트 전 확인할 조건",
-      "score": 25,
-      "level": "high",
-      "clinical": 15,
-      "guarantees": 6,
-      "personal": 0,
-      "statistics": 2,
-      "links": 0,
-      "careSignals": 2
-    },
-    {
-      "fileName": "2026-05-23-슈퍼푸드로-완성하는-영양만점-건강식단.md",
-      "title": "영양만점 슈퍼푸드 식단: 하루 식단에 적용하는 방법",
-      "score": 24,
-      "level": "high",
-      "clinical": 8,
-      "guarantees": 6,
-      "personal": 1,
-      "statistics": 0,
-      "links": 0,
-      "careSignals": 1
-    },
-    {
-      "fileName": "2026-04-29-지중해식-식단으로-건강한-삶-시작하기-실생활-적용.md",
-      "title": "지중해식 식단으로 건강한 삶을 시작하는 방법: 실생활에서의 적용 팁",
-      "score": 23,
-      "level": "high",
-      "clinical": 5,
-      "guarantees": 4,
-      "personal": 1,
-      "statistics": 0,
-      "links": 0,
-      "careSignals": 0
-    },
-    {
-      "fileName": "2026-04-14-우울감-걷어내는-햇빛-산책과-멘탈케어-세로토닌-활.md",
-      "title": "햇빛과 산책이 우울감을 덜어주는 과학적 이유",
-      "score": 23,
-      "level": "high",
-      "clinical": 8,
-      "guarantees": 3,
-      "personal": 0,
-      "statistics": 3,
-      "links": 0,
-      "careSignals": 0
-    },
-    {
-      "fileName": "2026-04-04-가짜-배고픔에-속지-않는-다이어트-심리-극복과-폭식.md",
-      "title": "가짜 배고픔을 극복하는 법: 다이어트 심리와 폭식 방지의 최신 연구",
-      "score": 22,
-      "level": "high",
-      "clinical": 5,
-      "guarantees": 3,
-      "personal": 0,
-      "statistics": 1,
-      "links": 0,
-      "careSignals": 0
-    },
     {
       "fileName": "2026-04-08-무리한-감량이-부르는-재앙-단기간-다이어트-부작용.md",
       "title": "단기간 다이어트의 위험: 무리한 감량이 초래하는 부작용과 예방 가이드",
@@ -1041,6 +981,18 @@
       "careSignals": 2
     },
     {
+      "fileName": "2026-05-16-간헐적-단식으로-다이어트-성공하기-효과와-주의사.md",
+      "title": "간헐적 단식 시작 전 확인할 안전 조건",
+      "score": 10,
+      "level": "review",
+      "clinical": 6,
+      "guarantees": 1,
+      "personal": 0,
+      "statistics": 4,
+      "links": 3,
+      "careSignals": 5
+    },
+    {
       "fileName": "2026-03-30-골다공증-예방하는-뼈-건강식단-칼슘-보충-최적의-시.md",
       "title": "뼈 건강을 위한 칼슘·비타민 D: 식품과 보충제 판단 기준",
       "score": 10,
@@ -1111,6 +1063,18 @@
       "statistics": 0,
       "links": 3,
       "careSignals": 4
+    },
+    {
+      "fileName": "2026-04-14-우울감-걷어내는-햇빛-산책과-멘탈케어-세로토닌-활.md",
+      "title": "우울감이 있을 때 산책과 빛을 활용하는 안전한 방법",
+      "score": 9,
+      "level": "review",
+      "clinical": 4,
+      "guarantees": 1,
+      "personal": 1,
+      "statistics": 2,
+      "links": 3,
+      "careSignals": 3
     },
     {
       "fileName": "2026-03-17-숨겨진-독소-피하는-제철-채소-건강식단-영양소-구성.md",
@@ -1221,6 +1185,30 @@
       "careSignals": 1
     },
     {
+      "fileName": "2026-04-29-지중해식-식단으로-건강한-삶-시작하기-실생활-적용.md",
+      "title": "지중해식 식사를 한국 식탁에 적용하는 작은 교체법",
+      "score": 5,
+      "level": "lower",
+      "clinical": 3,
+      "guarantees": 1,
+      "personal": 0,
+      "statistics": 0,
+      "links": 3,
+      "careSignals": 2
+    },
+    {
+      "fileName": "2026-04-04-가짜-배고픔에-속지-않는-다이어트-심리-극복과-폭식.md",
+      "title": "반복되는 폭식과 감정적 식사: 구분·기록·도움 요청 기준",
+      "score": 4,
+      "level": "lower",
+      "clinical": 1,
+      "guarantees": 1,
+      "personal": 1,
+      "statistics": 0,
+      "links": 3,
+      "careSignals": 4
+    },
+    {
       "fileName": "2026-05-15-명상으로-스트레스를-관리하는-효과적인-방법.md",
       "title": "스트레스 관리를 위한 명상: 5분 실천과 중단 기준",
       "score": 4,
@@ -1243,6 +1231,18 @@
       "statistics": 0,
       "links": 3,
       "careSignals": 4
+    },
+    {
+      "fileName": "2026-05-23-슈퍼푸드로-완성하는-영양만점-건강식단.md",
+      "title": "슈퍼푸드보다 중요한 하루 식단 구성 기준",
+      "score": 2,
+      "level": "lower",
+      "clinical": 1,
+      "guarantees": 0,
+      "personal": 1,
+      "statistics": 0,
+      "links": 3,
+      "careSignals": 2
     },
     {
       "fileName": "2026-06-22-지중해식단-건강과-맛을-동시에-챙기는-완벽한-방법.md",
