@@ -2,48 +2,12 @@
   "generated": "2026-08-09",
   "summary": {
     "audited": 106,
-    "high": 58,
-    "review": 38,
-    "lower": 10,
-    "noDirectLinks": 89
+    "high": 53,
+    "review": 42,
+    "lower": 11,
+    "noDirectLinks": 84
   },
   "results": [
-    {
-      "fileName": "2026-03-15-체중계-숫자보다-체지방-감량-집중하는-다이어트-성.md",
-      "title": "체중보다 체지방 변화에 집중하는 건강한 감량 전략",
-      "score": 30,
-      "level": "high",
-      "clinical": 7,
-      "guarantees": 6,
-      "personal": 1,
-      "statistics": 11,
-      "links": 0,
-      "careSignals": 0
-    },
-    {
-      "fileName": "2026-05-04-치매-걱정-없는-뇌-건강을-위한-독서-취미의-놀라운-효.md",
-      "title": "독서와 인지 건강: 치매 예방 관점에서 보는 생활습관",
-      "score": 27,
-      "level": "high",
-      "clinical": 17,
-      "guarantees": 5,
-      "personal": 0,
-      "statistics": 9,
-      "links": 0,
-      "careSignals": 0
-    },
-    {
-      "fileName": "2026-05-05-짧고-굵게-끝내는-체력-증진-인터벌-효과-극대화-방법.md",
-      "title": "짧고 굵게 끝내는 체력 증진! 인터벌 효과 극대화 방법",
-      "score": 26,
-      "level": "high",
-      "clinical": 3,
-      "guarantees": 6,
-      "personal": 0,
-      "statistics": 8,
-      "links": 0,
-      "careSignals": 0
-    },
     {
       "fileName": "2026-05-16-간헐적-단식으로-다이어트-성공하기-효과와-주의사.md",
       "title": "간헐적 단식 주의사항: 다이어트 전 확인할 조건",
@@ -55,30 +19,6 @@
       "statistics": 2,
       "links": 0,
       "careSignals": 2
-    },
-    {
-      "fileName": "2026-05-10-비만보다-무서운-대사-질환-전문가의-예방-및-치료-전.md",
-      "title": "대사질환 위험을 낮추는 생활관리 원칙",
-      "score": 25,
-      "level": "high",
-      "clinical": 21,
-      "guarantees": 9,
-      "personal": 0,
-      "statistics": 4,
-      "links": 0,
-      "careSignals": 1
-    },
-    {
-      "fileName": "2026-03-16-나이-들수록-중요한-근력-강화-운동-기초-대사량-증진.md",
-      "title": "중장년 근력 강화 운동: 기초 원리와 안전한 시작법",
-      "score": 25,
-      "level": "high",
-      "clinical": 10,
-      "guarantees": 4,
-      "personal": 0,
-      "statistics": 9,
-      "links": 0,
-      "careSignals": 0
     },
     {
       "fileName": "2026-05-23-슈퍼푸드로-완성하는-영양만점-건강식단.md",
@@ -1077,6 +1017,18 @@
       "careSignals": 0
     },
     {
+      "fileName": "2026-05-05-짧고-굵게-끝내는-체력-증진-인터벌-효과-극대화-방법.md",
+      "title": "인터벌 운동 시작법: 강도·회복·중단 신호",
+      "score": 11,
+      "level": "review",
+      "clinical": 6,
+      "guarantees": 1,
+      "personal": 1,
+      "statistics": 3,
+      "links": 3,
+      "careSignals": 3
+    },
+    {
       "fileName": "2026-03-17-감기보다-무서운-염증-잡는-건강식단-속-항산화-음식.md",
       "title": "항산화 식품과 염증: 식단에서 기대할 수 있는 범위",
       "score": 11,
@@ -1113,6 +1065,18 @@
       "careSignals": 1
     },
     {
+      "fileName": "2026-03-16-나이-들수록-중요한-근력-강화-운동-기초-대사량-증진.md",
+      "title": "중장년 근력운동 시작법: 기능·강도·회복 기준",
+      "score": 10,
+      "level": "review",
+      "clinical": 8,
+      "guarantees": 1,
+      "personal": 0,
+      "statistics": 1,
+      "links": 3,
+      "careSignals": 3
+    },
+    {
       "fileName": "2026-03-18-수술-없이-통증-잡는-생활습관-자세-교정-운동과-스트.md",
       "title": "지속되는 근골격계 통증: 자세·활동 조절과 진료 신호",
       "score": 10,
@@ -1137,6 +1101,18 @@
       "careSignals": 1
     },
     {
+      "fileName": "2026-05-04-치매-걱정-없는-뇌-건강을-위한-독서-취미의-놀라운-효.md",
+      "title": "독서와 인지 건강: 관찰연구와 생활습관의 범위",
+      "score": 9,
+      "level": "review",
+      "clinical": 4,
+      "guarantees": 2,
+      "personal": 1,
+      "statistics": 0,
+      "links": 3,
+      "careSignals": 4
+    },
+    {
       "fileName": "2026-03-17-숨겨진-독소-피하는-제철-채소-건강식단-영양소-구성.md",
       "title": "제철 채소 고르기와 안전한 세척·보관 방법",
       "score": 9,
@@ -1159,6 +1135,18 @@
       "statistics": 5,
       "links": 0,
       "careSignals": 1
+    },
+    {
+      "fileName": "2026-05-10-비만보다-무서운-대사-질환-전문가의-예방-및-치료-전.md",
+      "title": "대사증후군 검사와 생활관리: 혈압·혈당·지질 함께 보기",
+      "score": 8,
+      "level": "review",
+      "clinical": 17,
+      "guarantees": 1,
+      "personal": 0,
+      "statistics": 0,
+      "links": 3,
+      "careSignals": 7
     },
     {
       "fileName": "2026-03-16-무릎-아프지-않게-운동-관절-보호-수칙과-올바른-자세.md",
@@ -1243,6 +1231,18 @@
       "statistics": 3,
       "links": 2,
       "careSignals": 5
+    },
+    {
+      "fileName": "2026-03-15-체중계-숫자보다-체지방-감량-집중하는-다이어트-성.md",
+      "title": "체중과 체지방 변화를 함께 기록하는 감량 기준",
+      "score": 4,
+      "level": "lower",
+      "clinical": 2,
+      "guarantees": 1,
+      "personal": 0,
+      "statistics": 0,
+      "links": 3,
+      "careSignals": 4
     },
     {
       "fileName": "2026-06-22-지중해식단-건강과-맛을-동시에-챙기는-완벽한-방법.md",
