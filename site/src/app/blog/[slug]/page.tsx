@@ -1,5 +1,6 @@
-import { getAllPostSlugs, getPostData, getRelatedPosts } from "@/lib/posts";
+import { getAllPostSlugs, getPostData, getRelatedPosts, getSortedPostsData } from "@/lib/posts";
 import { getEditorialReferences } from "@/lib/references";
+import { getTopicGuide } from "@/lib/topicGuides";
 import { absoluteUrl, EDITOR_NAME, SITE_NAME, SITE_URL } from "@/lib/site";
 import PostCard from "@/components/PostCard";
 import Link from "next/link";
@@ -59,6 +60,13 @@ export default async function PostPage({ params }: Props) {
   const emoji = CATEGORY_EMOJI[post.category] || "💚";
   const references = getEditorialReferences(post);
   const relatedPosts = getRelatedPosts(post);
+  const topicGuide = getTopicGuide(post.slug);
+  const allPosts = topicGuide ? getSortedPostsData() : [];
+  const topicPosts = topicGuide
+    ? topicGuide.postSlugs
+        .map((topicSlug) => allPosts.find((candidate) => candidate.slug === topicSlug))
+        .filter((candidate): candidate is NonNullable<typeof candidate> => Boolean(candidate))
+    : [];
   const articleUrl = absoluteUrl(`/blog/${post.slug}/`);
   const imageUrl = post.thumbnail ? absoluteUrl(post.thumbnail) : undefined;
   const jsonLd = [
@@ -142,6 +150,31 @@ export default async function PostPage({ params }: Props) {
         className="article-content"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
+
+      {topicGuide && (
+        <nav className="topic-guide" aria-labelledby={`topic-guide-${topicGuide.id}`}>
+          <div className="article-section-heading">
+            <p>주제 탐색</p>
+            <h2 id={`topic-guide-${topicGuide.id}`}>{topicGuide.label}</h2>
+          </div>
+          <p className="topic-guide__description">
+            {topicGuide.description} 현재 글이 세부 주제라면 대표 가이드에서 전체 기준을 먼저 확인할 수 있습니다.
+          </p>
+          <ul className="topic-guide__links">
+            {topicPosts.map((topicPost) => (
+              <li key={topicPost.slug}>
+                <Link
+                  href={`/blog/${topicPost.slug}`}
+                  aria-current={topicPost.slug === post.slug ? "page" : undefined}
+                >
+                  <span>{topicPost.slug === topicGuide.pillarSlug ? "대표 가이드" : "세부 글"}</span>
+                  <strong>{topicPost.title}</strong>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
 
       <section className="article-references" aria-labelledby="verified-references">
         <div className="article-section-heading">
