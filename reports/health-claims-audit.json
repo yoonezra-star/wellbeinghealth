@@ -2,72 +2,12 @@
   "generated": "2026-08-09",
   "summary": {
     "audited": 106,
-    "high": 48,
-    "review": 44,
-    "lower": 14,
-    "noDirectLinks": 79
+    "high": 43,
+    "review": 46,
+    "lower": 17,
+    "noDirectLinks": 74
   },
   "results": [
-    {
-      "fileName": "2026-04-08-무리한-감량이-부르는-재앙-단기간-다이어트-부작용.md",
-      "title": "단기간 다이어트의 위험: 무리한 감량이 초래하는 부작용과 예방 가이드",
-      "score": 22,
-      "level": "high",
-      "clinical": 3,
-      "guarantees": 6,
-      "personal": 0,
-      "statistics": 2,
-      "links": 0,
-      "careSignals": 1
-    },
-    {
-      "fileName": "2026-05-11-스트레스가-위를-망친다-전문가의-심신-상관관계-집.md",
-      "title": "웰빙 습관 설계: 연구 기반 생활관리 원칙",
-      "score": 21,
-      "level": "high",
-      "clinical": 7,
-      "guarantees": 4,
-      "personal": 0,
-      "statistics": 7,
-      "links": 0,
-      "careSignals": 1
-    },
-    {
-      "fileName": "2026-04-30-계단-오르기-운동으로-일상-속-건강-챙기기.md",
-      "title": "계단 오르기 운동으로 일상 속 건강 챙기기: 간단하지만 효과적인 방법",
-      "score": 20,
-      "level": "high",
-      "clinical": 3,
-      "guarantees": 3,
-      "personal": 0,
-      "statistics": 3,
-      "links": 0,
-      "careSignals": 0
-    },
-    {
-      "fileName": "2026-03-19-일상이-무너지는-신호-번아웃-예방-멘탈케어-휴식-방.md",
-      "title": "일상이 무너지는 신호: 번아웃 예방을 위한 멘탈케어 및 휴식 방법",
-      "score": 20,
-      "level": "high",
-      "clinical": 1,
-      "guarantees": 5,
-      "personal": 0,
-      "statistics": 0,
-      "links": 0,
-      "careSignals": 0
-    },
-    {
-      "fileName": "2026-03-26-짠맛에-길들여진-혀를-깨우는-건강식단-저염식-습관.md",
-      "title": "짠맛을 넘어서: 건강한 저염식 습관 형성의 과학적 접근",
-      "score": 20,
-      "level": "high",
-      "clinical": 10,
-      "guarantees": 1,
-      "personal": 1,
-      "statistics": 5,
-      "links": 0,
-      "careSignals": 0
-    },
     {
       "fileName": "2026-03-20-100세-시대의-공포-노후-준비론-전문가-건강-자산-설계.md",
       "title": "100세 시대, 건강과 자산을 동시에 고려한 노후 준비의 중요성",
@@ -1053,6 +993,18 @@
       "careSignals": 1
     },
     {
+      "fileName": "2026-04-08-무리한-감량이-부르는-재앙-단기간-다이어트-부작용.md",
+      "title": "단기간 체중 감량 전에 확인할 위험 신호와 안전 기준",
+      "score": 9,
+      "level": "review",
+      "clinical": 5,
+      "guarantees": 2,
+      "personal": 0,
+      "statistics": 0,
+      "links": 3,
+      "careSignals": 6
+    },
+    {
       "fileName": "2026-05-04-치매-걱정-없는-뇌-건강을-위한-독서-취미의-놀라운-효.md",
       "title": "독서와 인지 건강: 관찰연구와 생활습관의 범위",
       "score": 9,
@@ -1111,6 +1063,18 @@
       "statistics": 0,
       "links": 3,
       "careSignals": 7
+    },
+    {
+      "fileName": "2026-05-11-스트레스가-위를-망친다-전문가의-심신-상관관계-집.md",
+      "title": "스트레스와 소화불량: 증상 기록과 진료 신호",
+      "score": 8,
+      "level": "review",
+      "clinical": 5,
+      "guarantees": 1,
+      "personal": 1,
+      "statistics": 0,
+      "links": 3,
+      "careSignals": 9
     },
     {
       "fileName": "2026-03-16-무릎-아프지-않게-운동-관절-보호-수칙과-올바른-자세.md",
@@ -1173,6 +1137,18 @@
       "careSignals": 9
     },
     {
+      "fileName": "2026-04-30-계단-오르기-운동으로-일상-속-건강-챙기기.md",
+      "title": "계단 오르기 운동: 한 층부터 안전하게 늘리는 방법",
+      "score": 5,
+      "level": "lower",
+      "clinical": 5,
+      "guarantees": 0,
+      "personal": 0,
+      "statistics": 0,
+      "links": 3,
+      "careSignals": 3
+    },
+    {
       "fileName": "2026-06-10-최고의-건강식단-슈퍼푸드로-식탁을-채우는-법.md",
       "title": "슈퍼푸드 식단 구성법: 영양 밀도를 높이는 선택 기준",
       "score": 5,
@@ -1221,6 +1197,18 @@
       "careSignals": 5
     },
     {
+      "fileName": "2026-03-19-일상이-무너지는-신호-번아웃-예방-멘탈케어-휴식-방.md",
+      "title": "직무 번아웃 신호와 회복 계획: 개인 휴식과 업무 조정",
+      "score": 4,
+      "level": "lower",
+      "clinical": 1,
+      "guarantees": 0,
+      "personal": 1,
+      "statistics": 1,
+      "links": 3,
+      "careSignals": 2
+    },
+    {
       "fileName": "2026-03-15-체중계-숫자보다-체지방-감량-집중하는-다이어트-성.md",
       "title": "체중과 체지방 변화를 함께 기록하는 감량 기준",
       "score": 4,
@@ -1231,6 +1219,18 @@
       "statistics": 0,
       "links": 3,
       "careSignals": 4
+    },
+    {
+      "fileName": "2026-03-26-짠맛에-길들여진-혀를-깨우는-건강식단-저염식-습관.md",
+      "title": "저염식 시작법: 나트륨 표시 읽기와 단계별 줄이기",
+      "score": 3,
+      "level": "lower",
+      "clinical": 1,
+      "guarantees": 0,
+      "personal": 0,
+      "statistics": 4,
+      "links": 3,
+      "careSignals": 3
     },
     {
       "fileName": "2026-05-23-슈퍼푸드로-완성하는-영양만점-건강식단.md",
