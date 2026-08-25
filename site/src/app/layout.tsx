@@ -43,6 +43,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "S_AkLU9rcMzWW3XJrzqolc4EGk9DyLBiSYcOx-7agnM",
+  },
   other: {
     "google-adsense-account": ADSENSE_PUBLISHER_ID,
   },
