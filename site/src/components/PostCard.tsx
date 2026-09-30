@@ -19,8 +19,15 @@ function formatDate(dateStr: string) {
   ).padStart(2, "0")}`;
 }
 
-export default function PostCard({ post }: { post: PostMeta }) {
+export default function PostCard({
+  post,
+  dateMode = "published",
+}: {
+  post: PostMeta;
+  dateMode?: "published" | "updated";
+}) {
   const emoji = CATEGORY_EMOJI[post.category] || "💚";
+  const displayUpdated = dateMode === "updated" && Boolean(post.updated);
 
   return (
     <Link href={`/blog/${post.slug}`} className="post-card">
@@ -43,7 +50,9 @@ export default function PostCard({ post }: { post: PostMeta }) {
           <p className="post-card__excerpt">{post.excerpt}</p>
         )}
         <div className="post-card__footer">
-          <span className="post-card__date">{formatDate(post.date)}</span>
+          <span className="post-card__date">
+            {displayUpdated ? `수정 ${formatDate(post.updated!)}` : formatDate(post.date)}
+          </span>
           <span className="post-card__read">읽기 →</span>
         </div>
       </div>

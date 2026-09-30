@@ -12,12 +12,14 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   const allPosts = getSortedPostsData();
-  const latestPosts = allPosts.slice(0, 6);
+  const latestPosts = [...allPosts]
+    .sort((a, b) => (b.updated || b.date).localeCompare(a.updated || a.date))
+    .slice(0, 6);
+  const categoryCount = new Set(allPosts.map((post) => post.category)).size;
 
   const stats = [
-    { label: "전문 아티클", value: `${allPosts.length}+` },
-    { label: "카테고리", value: "6" },
-    { label: "매주 업데이트", value: "✓" },
+    { label: "건강 아티클", value: allPosts.length },
+    { label: "카테고리", value: categoryCount },
   ];
 
   return (
@@ -75,7 +77,7 @@ export default function HomePage() {
       <section className="posts-section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">최신 아티클</h2>
+            <h2 className="section-title">최근 업데이트 아티클</h2>
             <Link href="/blog" className="section-link">
               전체 보기 →
             </Link>
@@ -84,7 +86,7 @@ export default function HomePage() {
           {latestPosts.length > 0 ? (
             <div className="posts-grid">
               {latestPosts.map((post) => (
-                <PostCard key={post.slug} post={post} />
+                <PostCard key={post.slug} post={post} dateMode="updated" />
               ))}
             </div>
           ) : (

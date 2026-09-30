@@ -132,10 +132,8 @@ export default async function PostPage({ params }: Props) {
         </div>
       </header>
 
-      {post.thumbnail ? (
+      {post.thumbnail && (
         <img className="article-thumbnail" src={post.thumbnail} alt={post.title} />
-      ) : (
-        <div className="article-thumbnail-placeholder">{emoji}</div>
       )}
 
       <aside className="health-notice" aria-label="건강정보 이용 안내">
@@ -176,10 +174,10 @@ export default async function PostPage({ params }: Props) {
         </nav>
       )}
 
-      <section className="article-references" aria-labelledby="verified-references">
+      <section className="article-references" aria-labelledby="article-references-title">
         <div className="article-section-heading">
-          <p>검증 가능한 원문</p>
-          <h2 id="verified-references">편집팀 참고자료</h2>
+          <p>주제별 일반 참고자료</p>
+          <h2 id="article-references-title">추가로 살펴볼 자료</h2>
         </div>
         <ul>
           {references.map((reference) => (
@@ -192,8 +190,8 @@ export default async function PostPage({ params }: Props) {
           ))}
         </ul>
         <p className="article-references__note">
-          참고자료는 주제의 기본 원칙을 확인하기 위한 출발점입니다. 본문 전체가 특정 기관의 공식 입장을
-          그대로 옮긴 것은 아니며, 개인 상황에는 별도의 전문적 판단이 필요할 수 있습니다.
+          이 자료는 주제별 기본 안내이며 본문 개별 수치나 연구의 직접 인용을 대신하지 않습니다. 구체적인
+          연구 결과는 해당 문단에 연결된 원문을 확인하세요.
         </p>
       </section>
 

@@ -1,6 +1,5 @@
 "use client";
-import { useState, useEffect, Suspense } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import PostCard from "@/components/PostCard";
 import type { PostMeta } from "@/lib/posts";
 
@@ -15,30 +14,31 @@ const ALL_CATEGORIES = [
 ];
 
 function BlogContent({ allPosts }: { allPosts: PostMeta[] }) {
-  const searchParams = useSearchParams();
-  const router = useRouter();
-  const pathname = usePathname();
-  const initialCat = searchParams.get("cat") || "전체";
-  const [activeCategory, setActiveCategory] = useState(initialCat);
+  const [activeCategory, setActiveCategory] = useState("전체");
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    const cat = searchParams.get("cat") || "전체";
-    setActiveCategory(cat);
-  }, [searchParams]);
+    const cat = new URLSearchParams(window.location.search).get("cat") || "전체";
+    setActiveCategory(ALL_CATEGORIES.includes(cat) ? cat : "전체");
+  }, []);
 
-  const filtered =
-    activeCategory === "전체"
-      ? allPosts
-      : allPosts.filter((p) => p.category === activeCategory);
+  const filtered = allPosts.filter((post) => {
+    const matchesCategory = activeCategory === "전체" || post.category === activeCategory;
+    const searchableText = `${post.title} ${post.excerpt} ${post.category}`.toLocaleLowerCase();
+    return matchesCategory && searchableText.includes(searchTerm.trim().toLocaleLowerCase());
+  });
+  const visibleSlugs = new Set(filtered.map((post) => post.slug));
 
   function selectCategory(category: string) {
-    const params = new URLSearchParams(searchParams.toString());
+    setActiveCategory(category);
+    const params = new URLSearchParams(window.location.search);
     if (category === "전체") {
       params.delete("cat");
     } else {
       params.set("cat", category);
     }
-    router.replace(params.size ? `${pathname}?${params.toString()}` : pathname, { scroll: false });
+    const query = params.size ? `?${params.toString()}` : "";
+    window.history.replaceState(null, "", `${window.location.pathname}${query}`);
   }
 
   return (
@@ -49,6 +49,7 @@ function BlogContent({ allPosts }: { allPosts: PostMeta[] }) {
           <button
             key={cat}
             className={`category-btn ${activeCategory === cat ? "active" : ""}`}
+            aria-pressed={activeCategory === cat}
             onClick={() => selectCategory(cat)}
           >
             {cat}
@@ -56,27 +57,41 @@ function BlogContent({ allPosts }: { allPosts: PostMeta[] }) {
         ))}
       </div>
 
+      <div className="blog-tools">
+        <label className="blog-search">
+          <span>글 검색</span>
+          <input
+            className="blog-search__input"
+            type="search"
+            value={searchTerm}
+            onChange={(event) => setSearchTerm(event.target.value)}
+            placeholder="제목과 요약 검색"
+          />
+        </label>
+        <p className="blog-results" aria-live="polite">{filtered.length}개 글</p>
+      </div>
+
       {/* Posts */}
-      {filtered.length > 0 ? (
+      {allPosts.length > 0 ? (
         <div className="posts-grid">
-          {filtered.map((post) => (
-            <PostCard key={post.slug} post={post} />
+          {allPosts.map((post) => (
+            <div className="blog-result" hidden={!visibleSlugs.has(post.slug)} key={post.slug}>
+              <PostCard post={post} />
+            </div>
           ))}
         </div>
       ) : (
         <div className="empty-state">
-          <div className="empty-state__icon">📝</div>
-          <p>이 카테고리에는 아직 게시된 글이 없습니다.</p>
+          <p>아직 게시된 글이 없습니다.</p>
         </div>
+      )}
+      {allPosts.length > 0 && filtered.length === 0 && (
+        <div className="empty-state"><p>검색 결과가 없습니다.</p></div>
       )}
     </>
   );
 }
 
 export default function BlogPage({ allPosts }: { allPosts: PostMeta[] }) {
-  return (
-    <Suspense fallback={<div style={{ padding: "80px", textAlign: "center", color: "var(--text-muted)" }}>로딩 중...</div>}>
-      <BlogContent allPosts={allPosts} />
-    </Suspense>
-  );
+  return <BlogContent allPosts={allPosts} />;
 }
