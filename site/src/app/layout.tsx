@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -11,12 +10,6 @@ import {
   SITE_NAME,
   SITE_URL,
 } from "@/lib/site";
-
-const notoSansKR = Noto_Sans_KR({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -75,7 +68,7 @@ export default function RootLayout({
 
   return (
     <html lang="ko">
-      <body className={notoSansKR.className}>
+      <body>
         <Script
           id="adsense-script"
           async
