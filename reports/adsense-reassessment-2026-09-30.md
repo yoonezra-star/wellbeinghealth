@@ -166,6 +166,7 @@
 - GitHub 자동 배포: `.github/workflows/deploy.yml`을 `main` 푸시 시 빌드·프로덕션 배포하도록 변경하고 `00c7aee`로 푸시했다. GitHub Actions 실행이 빌드와 배포 모두 성공했고 Cloudflare Production에서 해당 커밋을 확인했다. [GitHub Actions 실행 기록](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/36732447972). 이는 기존 Pages 프로젝트에 연결된 GitHub Actions 방식의 자동 배포다. Cloudflare 대시보드의 Pages 네이티브 Git 연결 표시는 별개이며 직접 업로드 프로젝트 설정에 따라 'No Git connection'으로 남을 수 있다.
 - AdSense 재심사: 제출하지 않았다. 전체 106개 글의 의학적 사실검증과 전체 모바일·이미지 원본 대조가 남아 있으므로, 이 작업 결과가 승인을 보장하지 않는다.
 - 6단계(미개정 게시물 주제별 심층 점검): 진행 중. 간헐적 단식으로 자동 분류된 8개 글을 본문 기준으로 검토했다. 이 중 공복 운동 글은 단회 운동 중 지방 산화와 장기 체지방 변화의 차이를 직접 연구 자료로 설명하도록 전면 개정했고, 단식 방식 비교 글은 99개 무작위시험 메타분석의 결과·효과 크기·추적 기간 한계를 반영해 전면 개정했다. 나머지 글은 개요·안전 안내·실천 기록·12개월 임상시험 해석 등 역할이 구분되는지 확인했으나 이번 단계에서 모두 원문 대조를 끝낸 것은 아니다. 당뇨 전단계 식단 글은 단식 주제군 오분류를 바로잡는다. 전체 106개 글 검토는 계속 남아 있다.
+- 6단계 1차 묶음 공개 배포: `98842a4`는 CI에서 `next/font/google`의 빌드 시 Google Fonts 요청 실패로 멈췄다. 화면 글꼴은 유지하면서 빌드 시 외부 다운로드를 요구하지 않도록 `1b84092`에서 폰트 선언을 수정했고, 118개 경로 빌드와 GitHub Actions/Cloudflare Production 배포가 성공했다. 공복 운동 및 단식 방식 비교 글 모두 사용자 도메인에서 HTTPS 200, 새 제목과 본문 연구 링크를 확인했다. [복구 후 GitHub Actions 실행](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/36739112881).
 
 ### 미확인 범위
 
