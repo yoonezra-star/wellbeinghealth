@@ -161,6 +161,7 @@
 - 4단계(책임·운영 보강): 완료 가능한 범위 점검. 소개·편집정책·면책·개인정보 페이지에 운영팀, 출처 우선순위, 전문가 검토 표기 기준, 정정 접수 경로가 이미 구체적으로 있어 허위 개인 이름·자격이나 확인되지 않은 운영주기를 추가하지 않았다. 본문 인용 원문과 자동 추천 일반 참고자료는 구분해 표시한다.
 - 5단계(로컬 검증): 로컬 범위 완료. `npm run build`가 118개 정적 경로를 모두 생성했다. 빌드 산출물의 HTML 115개와 내부 링크 3,944개를 검사해 끊어진 내부 링크 0개를 확인했다. 정적 글 목록은 106개 링크를 포함하고, 검색·카테고리 필터 동작도 로컬 브라우저에서 확인했다. 개정 대표 글에서 본문, 수정일, 개별 연구 원문, 관련 글이 표시되며 이미지가 없는 글의 큰 자리표시자는 제거했다. 전체 모바일 세부 점검과 이미지 원본 누락 대조는 미완료다.
 - GitHub·Cloudflare 배포: 사용자 확인 후 `main`에 `5bad87b` (`Improve AdSense editorial readiness`)를 푸시하고, Cloudflare Pages `wellbeinghealth-site` Production에 정적 빌드를 배포했다. [Cloudflare 배포 기록](https://dash.cloudflare.com/6bde2d07259fb28c49f960364300fa23/pages/view/wellbeinghealth-site/0e508525-660e-42c8-a609-6b4e5965746f). 배포 직후 사용자 도메인 홈·글 목록·편집정책 및 개정한 PREDIMED 글이 HTTPS 200으로 응답하는 것을 확인했다. 공개 홈에서 '매주 업데이트'가 사라졌고, 공개 글 목록에는 정적 글 링크가 포함되며 '로딩 중' 안내가 없고, PREDIMED 글에서 새 제목·본문·직접 원문 참고자료가 확인된다.
+- GitHub 자동 배포: `.github/workflows/deploy.yml`을 `main` 푸시 시 빌드·프로덕션 배포하도록 변경하고 `00c7aee`로 푸시했다. GitHub Actions 실행이 빌드와 배포 모두 성공했고 Cloudflare Production에서 해당 커밋을 확인했다. [GitHub Actions 실행 기록](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/36732447972). 이는 기존 Pages 프로젝트에 연결된 GitHub Actions 방식의 자동 배포다. Cloudflare 대시보드의 Pages 네이티브 Git 연결 표시는 별개이며 직접 업로드 프로젝트 설정에 따라 'No Git connection'으로 남을 수 있다.
 - AdSense 재심사: 제출하지 않았다. 전체 106개 글의 의학적 사실검증과 전체 모바일·이미지 원본 대조가 남아 있으므로, 이 작업 결과가 승인을 보장하지 않는다.
 
 ### 미확인 범위
