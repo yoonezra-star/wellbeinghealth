@@ -4,6 +4,8 @@
 대상: https://wellbeinghealth.co.kr/
 보고서 범위: 공개 사이트 점검과 업데이트 계획. 아래 실행 기록은 이 보고서를 바탕으로 이어서 적용한 수정 사항을 기록한다.
 
+후속 편집 기록은 2026-10-01부터 덧붙인다. 주제군 분류는 자동 1차 분류라 오탐이 있을 수 있으며, 편집 전 본문으로 확인한다.
+
 ## 1. 결론
 
 **현재는 즉시 재신청보다 콘텐츠 정리와 핵심 글 재편집을 먼저 하는 편이 적절하다.**
@@ -163,6 +165,7 @@
 - GitHub·Cloudflare 배포: 사용자 확인 후 `main`에 `5bad87b` (`Improve AdSense editorial readiness`)를 푸시하고, Cloudflare Pages `wellbeinghealth-site` Production에 정적 빌드를 배포했다. [Cloudflare 배포 기록](https://dash.cloudflare.com/6bde2d07259fb28c49f960364300fa23/pages/view/wellbeinghealth-site/0e508525-660e-42c8-a609-6b4e5965746f). 배포 직후 사용자 도메인 홈·글 목록·편집정책 및 개정한 PREDIMED 글이 HTTPS 200으로 응답하는 것을 확인했다. 공개 홈에서 '매주 업데이트'가 사라졌고, 공개 글 목록에는 정적 글 링크가 포함되며 '로딩 중' 안내가 없고, PREDIMED 글에서 새 제목·본문·직접 원문 참고자료가 확인된다.
 - GitHub 자동 배포: `.github/workflows/deploy.yml`을 `main` 푸시 시 빌드·프로덕션 배포하도록 변경하고 `00c7aee`로 푸시했다. GitHub Actions 실행이 빌드와 배포 모두 성공했고 Cloudflare Production에서 해당 커밋을 확인했다. [GitHub Actions 실행 기록](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/36732447972). 이는 기존 Pages 프로젝트에 연결된 GitHub Actions 방식의 자동 배포다. Cloudflare 대시보드의 Pages 네이티브 Git 연결 표시는 별개이며 직접 업로드 프로젝트 설정에 따라 'No Git connection'으로 남을 수 있다.
 - AdSense 재심사: 제출하지 않았다. 전체 106개 글의 의학적 사실검증과 전체 모바일·이미지 원본 대조가 남아 있으므로, 이 작업 결과가 승인을 보장하지 않는다.
+- 6단계(미개정 게시물 주제별 심층 점검): 진행 중. 간헐적 단식으로 자동 분류된 8개 글을 본문 기준으로 검토했다. 이 중 공복 운동 글은 단회 운동 중 지방 산화와 장기 체지방 변화의 차이를 직접 연구 자료로 설명하도록 전면 개정했고, 단식 방식 비교 글은 99개 무작위시험 메타분석의 결과·효과 크기·추적 기간 한계를 반영해 전면 개정했다. 나머지 글은 개요·안전 안내·실천 기록·12개월 임상시험 해석 등 역할이 구분되는지 확인했으나 이번 단계에서 모두 원문 대조를 끝낸 것은 아니다. 당뇨 전단계 식단 글은 단식 주제군 오분류를 바로잡는다. 전체 106개 글 검토는 계속 남아 있다.
 
 ### 미확인 범위
 
