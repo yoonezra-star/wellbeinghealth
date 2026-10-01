@@ -21,18 +21,6 @@
       "careSignals": 3
     },
     {
-      "fileName": "2026-05-21-슈퍼푸드로-면역력을-강화하는-건강식단-가이드.md",
-      "title": "면역 식품 연구 읽는 법: 영양소 역할과 감염 예방은 다른 질문",
-      "score": 12,
-      "level": "review",
-      "clinical": 14,
-      "guarantees": 1,
-      "personal": 0,
-      "statistics": 0,
-      "links": 5,
-      "careSignals": 0
-    },
-    {
       "fileName": "2026-05-03-비염과-감기-예방하는-환절기-생활습관과-습도-유지.md",
       "title": "알레르기 비염과 감기 구분하기: 환절기 관리와 습도",
       "score": 12,
@@ -53,7 +41,7 @@
       "guarantees": 2,
       "personal": 0,
       "statistics": 12,
-      "links": 5,
+      "links": 7,
       "careSignals": 3
     },
     {
@@ -355,6 +343,18 @@
       "statistics": 2,
       "links": 3,
       "careSignals": 3
+    },
+    {
+      "fileName": "2026-05-21-슈퍼푸드로-면역력을-강화하는-건강식단-가이드.md",
+      "title": "면역 식품 연구 읽는 법: 영양소 역할과 감염 예방은 다른 질문",
+      "score": 8,
+      "level": "review",
+      "clinical": 14,
+      "guarantees": 1,
+      "personal": 0,
+      "statistics": 0,
+      "links": 7,
+      "careSignals": 2
     },
     {
       "fileName": "2026-05-12-거북목과-디스크의-상관관계-전문가의-재활-치료-권.md",

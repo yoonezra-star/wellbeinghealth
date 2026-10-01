@@ -183,6 +183,12 @@
 - 모바일 점검은 기사 106개와 정보 경로 7개, 총 113개 URL을 320px·390px에서 검사했다. 수면 기록표 글의 7열 표가 좁은 화면에서 가로 넘침을 일으켜 전체 기록을 보존한 2열 표로 변경했다. 수정 후 226개 경로·화면 조합에서 가로 넘침 0건, 리소스 오류 0건을 확인했다. 검색 `수면` 결과 14개, 검색 초기화 후 `건강식단` 필터 22개, 모바일 메뉴 열기·닫기 및 목록 이동도 확인했다. 이는 로컬 빌드의 레이아웃·기능 점검이며 접근성 전수검사나 실사용 성능 측정은 아니다.
 - 배포 및 공개 확인: `822f86f`를 `main`에 푸시했고 GitHub Actions `36819648164`의 Cloudflare 배포가 성공했다. 수정한 네 편과 수면 기록·저염식 글까지 6개 기존 URL이 사용자 도메인에서 HTTPS 200 및 새 제목을 반환한다. 다섯 핵심 글은 공개 사이트에서도 320px·390px 화면에서 가로 넘침 없이 열렸다. [GitHub Actions 실행](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/36819648164).
 
+### 6단계 11차 원문 대조
+
+- 자동 우선순위 상위 네 글(면역 보충제 근거, 비염·감기, 유산소 운동, 수면 환경)의 핵심 주장을 공식 자료와 대조했다. [NIH ODS 면역 기능 자료](https://ods.od.nih.gov/factsheets/ImmuneFunction-Consumer/), [CDC 감기 안내](https://www.cdc.gov/common-cold/about/), [MedlinePlus 알레르기 비염](https://medlineplus.gov/ency/article/000813.htm), [EPA 실내 습기 지침](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home), [CDC 가습기 위생 안내](https://www.cdc.gov/drinking-water/prevention/preventing-waterborne-germs-at-home.html), [WHO 신체활동 권고](https://www.who.int/news-room/fact-sheets/detail/physical-activity), [CDC 대화 테스트](https://www.cdc.gov/physicalactivity/basics/measuring/index.html), [CDC 수면 습관](https://www.cdc.gov/sleep/about/), [AASM 만성 불면증 행동치료 지침](https://pubmed.ncbi.nlm.nih.gov/33164742/)을 확인했다.
+- 비염 글의 알레르기 증상·상대습도·가습기 위생 안내와 수면 환경 글의 수면 습관·CBT-I 근거는 원문과 부합해 유지했다. 면역 글에는 보충제 고용량 부작용과 약물 상호작용 주의, 복용 전 상담 기준을 추가했다. 유산소 글에는 중강도 대화 테스트의 CDC 직접 출처를 연결하고 4주 예시는 개인 처방이 아닌 입문 예시임을 분명히 했다. 해당 두 글의 수정일과 편집 대장 검토 결과를 반영했다.
+- 이 묶음은 네 편의 특정 주장·출처를 대조한 것이며 사이트 전체 의료 사실 검증으로 확대 해석하지 않는다. 자동 점검은 106편에서 high 0 / review 36 / lower 70 / 직접 링크 누락 0으로 유지됐다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조와 원본 사이트 대비 이미지 누락 전수 비교, Core Web Vitals 및 실제 이용자 데이터는 미확인이다. 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 이번 모바일 경로 검증은 로컬 빌드 기준이며, 배포 후 수정 URL·레이아웃 재확인을 마쳐야 한다. 이는 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
