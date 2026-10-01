@@ -198,6 +198,12 @@
 - 이 비교는 저장소의 복원 기준본과 현재본 간 대조다. 운영 중인 `https://wellbeinghealth.co.kr/wp-json/wp/v2/posts`는 현재 Cloudflare Pages에서 404를 반환해 현행 원 WordPress 미디어 라이브러리와의 독립 비교는 할 수 없었다. 원본 백업 또는 WordPress 미디어 내보내기가 있으면 추가 대조할 수 있다.
 - Core Web Vitals 실측은 이 환경에 Chrome DevTools MCP가 없어 수행하지 않았다. 도구 기반 측정값으로 가장하지 않으며, DevTools 성능 측정 도구 연결 후 LCP·CLS·INP 측정이 남아 있다.
 
+### 6단계 13차 원문 대조
+
+- 인터벌 운동, 초보자 요가, 항산화 식품과 염증, 간헐적 단식 안전 안내 네 편의 주장을 CDC·HHS·NCCIH·NIA·NIDDK 원문과 대조했다. 인터벌 강도 설명은 [CDC 대화 테스트](https://www.cdc.gov/physicalactivity/basics/measuring/index.html), 요가 초보자 안전 문구는 [NCCIH 안전 자료](https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety), 항산화 보충제의 한계는 [NCCIH 자료](https://www.nccih.nih.gov/health/antioxidant-supplements-what-you-need-to-know), 단식 근거와 당뇨병 약물 주의는 [NIA](https://www.nia.nih.gov/news/calorie-restriction-and-fasting-diets-what-do-we-know)·[NIDDK](https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/fasting-safely-with-diabetes) 자료로 확인했다.
+- 인터벌·요가 글의 안전 조정과 연구 한계는 원문과 일치해 유지했다. 항산화 식품 글에는 고용량 베타카로틴 보충제 관련 흡연자 및 직업적 석면 노출자 폐암 위험 주의를 보강했다. 간헐적 단식 글에는 당뇨병 환자의 저혈당·고혈당·탈수 위험, 약물 조절은 의료진과 정해야 한다는 NIDDK 근거를 추가했다. 두 글의 수정일과 편집 대장을 갱신했다.
+- 자동 우선순위 집계는 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0으로 동일하다. 이 수치는 의학적 사실검증 점수가 아니며, 이 단계에서도 사이트 전체의 의학적 검토가 끝난 것은 아니다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
