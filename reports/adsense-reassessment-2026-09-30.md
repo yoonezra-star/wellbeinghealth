@@ -194,9 +194,10 @@
 
 - 간헐적 단식 안내 2편, 견과류와 인지 건강, 항산화 보충제 글의 핵심 주장을 [NIA 단식 근거 요약](https://www.nia.nih.gov/news/calorie-restriction-and-fasting-diets-what-do-we-know), [NIA 식단과 알츠하이머병 자료](https://www.nia.nih.gov/health/alzheimers-and-dementia/what-do-we-know-about-diet-and-prevention-alzheimers-disease), [NCCIH 항산화 보충제 자료](https://www.nccih.nih.gov/health/antioxidant-supplements-what-you-need-to-know)와 대조했다. 단식의 장기 효과·안전성은 확정되지 않았고 특정 견과류가 치매를 예방한다고 할 수 없다는 문구는 원문 범위에 부합했다. 항산화제 글에는 고용량 베타카로틴 보충제가 특히 흡연자·직업적 석면 노출자에게 폐암 위험을 높일 수 있다는 안전 주의를 추가했다.
 - 이미지 보존 대조는 WordPress 복원 기준 커밋 `1adf4da`와 현재 게시물 106개의 대표 이미지 경로를 비교했다. 한 건의 불일치를 찾았다. 무릎 운동 글이 복원 당시 연결돼 있던 무릎 관절 이미지 `wp-64-featured.webp` 대신 도시락 이미지 `wp-85-featured.webp`를 사용하고 있어 원래 매핑으로 되돌렸다. 이제 저장소의 WordPress 이미지 38개가 38개 고유 로컬 참조와 모두 일치하고, 빠진 파일·미참조 파일·중복 바이트 파일은 없다.
+- 빌드 및 공개 확인: `npm run build`가 정적 경로 118개를 생성했다. `890cd96`을 `main`에 푸시했고 GitHub Actions `36823429942`가 성공했다. 검토한 4개 글과 이미지 복구 글의 기존 주소는 HTTPS 200이며, 항산화 안전 안내와 무릎 이미지가 공개 페이지에 반영됐다. 무릎 이미지는 실제 브라우저에서 로드 완료(1024×1024)했고, 다섯 글 모두 320px 화면에서 문서 가로 넘침이 없었다. [GitHub Actions 실행](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/36823429942).
 - 이 비교는 저장소의 복원 기준본과 현재본 간 대조다. 운영 중인 `https://wellbeinghealth.co.kr/wp-json/wp/v2/posts`는 현재 Cloudflare Pages에서 404를 반환해 현행 원 WordPress 미디어 라이브러리와의 독립 비교는 할 수 없었다. 원본 백업 또는 WordPress 미디어 내보내기가 있으면 추가 대조할 수 있다.
 - Core Web Vitals 실측은 이 환경에 Chrome DevTools MCP가 없어 수행하지 않았다. 도구 기반 측정값으로 가장하지 않으며, DevTools 성능 측정 도구 연결 후 LCP·CLS·INP 측정이 남아 있다.
 
 ### 미확인 범위
 
-전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 모바일 113개 경로 점검은 이전 빌드에서 수행했으며 이번 변경을 포함한 최종 배포 확인이 필요하다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
+전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
