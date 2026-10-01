@@ -188,6 +188,7 @@
 - 자동 우선순위 상위 네 글(면역 보충제 근거, 비염·감기, 유산소 운동, 수면 환경)의 핵심 주장을 공식 자료와 대조했다. [NIH ODS 면역 기능 자료](https://ods.od.nih.gov/factsheets/ImmuneFunction-Consumer/), [CDC 감기 안내](https://www.cdc.gov/common-cold/about/), [MedlinePlus 알레르기 비염](https://medlineplus.gov/ency/article/000813.htm), [EPA 실내 습기 지침](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home), [CDC 가습기 위생 안내](https://www.cdc.gov/drinking-water/prevention/preventing-waterborne-germs-at-home.html), [WHO 신체활동 권고](https://www.who.int/news-room/fact-sheets/detail/physical-activity), [CDC 대화 테스트](https://www.cdc.gov/physicalactivity/basics/measuring/index.html), [CDC 수면 습관](https://www.cdc.gov/sleep/about/), [AASM 만성 불면증 행동치료 지침](https://pubmed.ncbi.nlm.nih.gov/33164742/)을 확인했다.
 - 비염 글의 알레르기 증상·상대습도·가습기 위생 안내와 수면 환경 글의 수면 습관·CBT-I 근거는 원문과 부합해 유지했다. 면역 글에는 보충제 고용량 부작용과 약물 상호작용 주의, 복용 전 상담 기준을 추가했다. 유산소 글에는 중강도 대화 테스트의 CDC 직접 출처를 연결하고 4주 예시는 개인 처방이 아닌 입문 예시임을 분명히 했다. 해당 두 글의 수정일과 편집 대장 검토 결과를 반영했다.
 - 이 묶음은 네 편의 특정 주장·출처를 대조한 것이며 사이트 전체 의료 사실 검증으로 확대 해석하지 않는다. 자동 점검은 106편에서 high 0 / review 36 / lower 70 / 직접 링크 누락 0으로 유지됐다.
+- 배포 및 공개 확인: `ad2c4b9`를 `main`에 푸시했고 GitHub Actions `36822253530` 배포가 성공했다. 네 검토 글의 기존 URL이 사용자 도메인에서 모두 HTTPS 200 및 예상 제목을 표시하고, 두 보강 글의 신규 안내·CDC 출처가 공개 HTML에 반영됐다. [GitHub Actions 실행](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/36822253530).
 
 ### 미확인 범위
 
