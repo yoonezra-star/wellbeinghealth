@@ -203,6 +203,7 @@
 - 인터벌 운동, 초보자 요가, 항산화 식품과 염증, 간헐적 단식 안전 안내 네 편의 주장을 CDC·HHS·NCCIH·NIA·NIDDK 원문과 대조했다. 인터벌 강도 설명은 [CDC 대화 테스트](https://www.cdc.gov/physicalactivity/basics/measuring/index.html), 요가 초보자 안전 문구는 [NCCIH 안전 자료](https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety), 항산화 보충제의 한계는 [NCCIH 자료](https://www.nccih.nih.gov/health/antioxidant-supplements-what-you-need-to-know), 단식 근거와 당뇨병 약물 주의는 [NIA](https://www.nia.nih.gov/news/calorie-restriction-and-fasting-diets-what-do-we-know)·[NIDDK](https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/fasting-safely-with-diabetes) 자료로 확인했다.
 - 인터벌·요가 글의 안전 조정과 연구 한계는 원문과 일치해 유지했다. 항산화 식품 글에는 고용량 베타카로틴 보충제 관련 흡연자 및 직업적 석면 노출자 폐암 위험 주의를 보강했다. 간헐적 단식 글에는 당뇨병 환자의 저혈당·고혈당·탈수 위험, 약물 조절은 의료진과 정해야 한다는 NIDDK 근거를 추가했다. 두 글의 수정일과 편집 대장을 갱신했다.
 - 자동 우선순위 집계는 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0으로 동일하다. 이 수치는 의학적 사실검증 점수가 아니며, 이 단계에서도 사이트 전체의 의학적 검토가 끝난 것은 아니다.
+- 배포 검증: `41a859b`를 `main`에 푸시했고 GitHub Actions `36828374403`의 Cloudflare Pages 배포가 성공했다. wellbeinghealth.co.kr에서 이 네 글 모두 HTTPS 200 및 제목 일치를 확인했으며, 항산화 글의 석면 노출 주의와 단식 글의 NIDDK 링크가 공개 HTML에 반영됐다. [GitHub Actions 실행](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/36828374403).
 
 ### 미확인 범위
 
