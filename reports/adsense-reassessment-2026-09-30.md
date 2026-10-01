@@ -190,6 +190,13 @@
 - 이 묶음은 네 편의 특정 주장·출처를 대조한 것이며 사이트 전체 의료 사실 검증으로 확대 해석하지 않는다. 자동 점검은 106편에서 high 0 / review 36 / lower 70 / 직접 링크 누락 0으로 유지됐다.
 - 배포 및 공개 확인: `ad2c4b9`를 `main`에 푸시했고 GitHub Actions `36822253530` 배포가 성공했다. 네 검토 글의 기존 URL이 사용자 도메인에서 모두 HTTPS 200 및 예상 제목을 표시하고, 두 보강 글의 신규 안내·CDC 출처가 공개 HTML에 반영됐다. [GitHub Actions 실행](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/36822253530).
 
+### 6단계 12차 원문·이미지 대조
+
+- 간헐적 단식 안내 2편, 견과류와 인지 건강, 항산화 보충제 글의 핵심 주장을 [NIA 단식 근거 요약](https://www.nia.nih.gov/news/calorie-restriction-and-fasting-diets-what-do-we-know), [NIA 식단과 알츠하이머병 자료](https://www.nia.nih.gov/health/alzheimers-and-dementia/what-do-we-know-about-diet-and-prevention-alzheimers-disease), [NCCIH 항산화 보충제 자료](https://www.nccih.nih.gov/health/antioxidant-supplements-what-you-need-to-know)와 대조했다. 단식의 장기 효과·안전성은 확정되지 않았고 특정 견과류가 치매를 예방한다고 할 수 없다는 문구는 원문 범위에 부합했다. 항산화제 글에는 고용량 베타카로틴 보충제가 특히 흡연자·직업적 석면 노출자에게 폐암 위험을 높일 수 있다는 안전 주의를 추가했다.
+- 이미지 보존 대조는 WordPress 복원 기준 커밋 `1adf4da`와 현재 게시물 106개의 대표 이미지 경로를 비교했다. 한 건의 불일치를 찾았다. 무릎 운동 글이 복원 당시 연결돼 있던 무릎 관절 이미지 `wp-64-featured.webp` 대신 도시락 이미지 `wp-85-featured.webp`를 사용하고 있어 원래 매핑으로 되돌렸다. 이제 저장소의 WordPress 이미지 38개가 38개 고유 로컬 참조와 모두 일치하고, 빠진 파일·미참조 파일·중복 바이트 파일은 없다.
+- 이 비교는 저장소의 복원 기준본과 현재본 간 대조다. 운영 중인 `https://wellbeinghealth.co.kr/wp-json/wp/v2/posts`는 현재 Cloudflare Pages에서 404를 반환해 현행 원 WordPress 미디어 라이브러리와의 독립 비교는 할 수 없었다. 원본 백업 또는 WordPress 미디어 내보내기가 있으면 추가 대조할 수 있다.
+- Core Web Vitals 실측은 이 환경에 Chrome DevTools MCP가 없어 수행하지 않았다. 도구 기반 측정값으로 가장하지 않으며, DevTools 성능 측정 도구 연결 후 LCP·CLS·INP 측정이 남아 있다.
+
 ### 미확인 범위
 
-전체 논문의 의학적 사실 대조와 원본 사이트 대비 이미지 누락 전수 비교, Core Web Vitals 및 실제 이용자 데이터는 미확인이다. 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 이번 모바일 경로 검증은 로컬 빌드 기준이며, 배포 후 수정 URL·레이아웃 재확인을 마쳐야 한다. 이는 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
+전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 모바일 113개 경로 점검은 이전 빌드에서 수행했으며 이번 변경을 포함한 최종 배포 확인이 필요하다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
