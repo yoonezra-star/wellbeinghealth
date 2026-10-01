@@ -19,6 +19,9 @@ const personalPattern = /(저는|제가|저도|제 경험|직접 경험|경험�
 const statisticPattern = /\d+(?:\.\d+)?\s*(?:%|배|kg|g|mg|분|시간)/g;
 const carePattern = /(의료진|의료기관|진료|응급|중단|의사|약사|임상영양사)/g;
 const linkPattern = /https?:\/\/[^)\s]+/g;
+const generated = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Asia/Seoul",
+}).format(new Date());
 
 function countMatches(value, pattern) {
   return (value.match(pattern) || []).length;
@@ -78,7 +81,7 @@ const tableRows = results
 
 const markdown = `# 건강 주장 자동 점검 보고서
 
-생성일: 2026-08-09
+생성일: ${generated}
 
 이 보고서는 질환명, 보장성 표현, 수치 주장, 직접 링크와 안전 문구를 기준으로 편집 우선순위를 정하는 휴리스틱 점검입니다. 점수는 의학적 오류 판정이나 애드센스 승인 보장을 뜻하지 않습니다.
 
@@ -107,7 +110,7 @@ ${tableRows}
 fs.mkdirSync(reportsDirectory, { recursive: true });
 fs.writeFileSync(
   path.join(reportsDirectory, "health-claims-audit.json"),
-  `${JSON.stringify({ generated: "2026-08-09", summary, results }, null, 2)}\n`,
+  `${JSON.stringify({ generated, summary, results }, null, 2)}\n`,
   "utf8"
 );
 fs.writeFileSync(path.join(reportsDirectory, "health-claims-audit.md"), markdown, "utf8");
