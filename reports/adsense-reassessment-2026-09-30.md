@@ -226,6 +226,12 @@
 - 자동 우선순위 집계는 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이며, 이는 사실검증이나 승인 예측 점수가 아니다. `npm run build`에서 정적 경로 118개를 생성했다.
 - 배포 확인: `aaac5a5` 및 GitHub Actions `36835077361` 배포 성공. 세 페이지 모두 사용자 도메인에서 HTTPS 200을 반환했다. 체중 감량 글의 NIDDK 담석 출처, 독서 글의 CDC 뇌졸중 링크가 공개됐고, 수정 없이 유지한 수면 글의 제목·시간 기준·CBT-I 안내도 확인했다. [GitHub Actions 실행](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/36835077361).
 
+### 6단계 17차 원문 대조
+
+- 식사와 만성 근골격 통증, 아침 식사 구성, 우울감과 산책·빛, 제철 채소 세척·보관 네 편을 체계적 문헌고찰·WHO·NIMH·CDC·FDA 원문과 대조했다. 류마티스관절염 식이 메타분석의 매우 낮은 확실성, 섬유근육통·만성 통증 식이 연구의 제한과 이질성, WHO의 건강 식사 원칙은 본문 설명과 부합했다. ([RA 메타분석](https://pmc.ncbi.nlm.nih.gov/articles/PMC8706441/), [섬유근육통 고찰](https://pmc.ncbi.nlm.nih.gov/articles/PMC7551150/), [만성 근골격 통증 고찰](https://pmc.ncbi.nlm.nih.gov/articles/PMC9180920/), [WHO](https://www.who.int/news-room/fact-sheets/detail/healthy-diet))
+- 우울감 글의 2주 이상 증상 평가, 계절성 우울증 광선치료의 별도 적용·주의, 자외선 보호 안내와 채소의 흐르는 물 세척·세제 금지·교차오염·냉장 보관 문구도 원문과 맞아 유지했다. ([NIMH 우울증](https://www.nimh.nih.gov/health/publications/depression), [NIMH 계절성 우울증](https://www.nimh.nih.gov/health/publications/seasonal-affective-disorder), [CDC 자외선 안전](https://www.cdc.gov/skin-cancer/sun-safety/), [FDA 농산물 안전](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely))
+- 자동 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이다. 이는 사실 판정이나 승인 예측이 아니다. `npm run build`에서 정적 경로 118개를 생성했다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
