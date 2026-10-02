@@ -269,7 +269,7 @@
 - 간헐적 단식 안내와 2주 기록표는 NIA의 사람 대상 장기 효과·안전성 근거 한계, NIDDK의 당뇨병 환자 단식 시 저혈당·고혈당·탈수 및 의료진의 개별 약물 계획과 대조했다. 장시간 공복을 성공으로 보지 않고, 약 임의 조정 금지·중단 신호·개별 상담 안내를 유지했다. ([NIA 단식 연구 개요](https://www.nia.nih.gov/news/calorie-restriction-and-fasting-diets-what-do-we-know), [NIDDK 당뇨병과 단식 안전](https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/fasting-safely-with-diabetes))
 - 견과류 글의 특정 식품이 알츠하이머병을 예방한다고 할 수 없다는 설명은 NIA의 최신 안내와 일치했다. 건강한 식사 패턴의 잠재성은 인정하되 근거가 혼재돼 있고 특정 식품의 예방 효과는 입증되지 않았다는 균형을 유지했다. ([NIA 식사와 알츠하이머 예방 근거](https://www.nia.nih.gov/health/alzheimers-and-dementia/what-do-we-know-about-diet-and-prevention-alzheimers-disease))
 - 요가 입문 글의 초보자 거꾸로서기·강제호흡 회피, 임신·고혈압·녹내장·균형 문제에서의 수정 및 의료진 상담은 NCCIH 안내와 부합했다. 네 글 모두 본문 수정은 불필요해 유지했고 편집 대장에 재대조를 기록했다. ([NCCIH 요가 효과와 안전](https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety))
-- 자동 주장 점검·정적 빌드·배포는 이 기록 반영 후 확인한다. 이번 대조는 개별 의료 조언이나 AdSense 승인 보장이 아니다.
+- 자동 주장 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이었고, 정적 빌드는 118개 경로를 생성했다. 커밋 `ad5304c`의 GitHub Actions `36960006071`이 성공했으며 네 공개 페이지 모두 HTTPS 200을 반환했다. 이번 대조는 개별 의료 조언이나 AdSense 승인 보장이 아니다.
 
 ### 미확인 범위
 
