@@ -239,6 +239,13 @@
 - 발효식품 글의 건강한 성인 36명·17주 무작위 식사 연구 설명은 연구의 범위를 넘지 않으며, 이를 특정 발효식품의 질환 예방이나 치료 증거로 확대하지 않는다. 보충제와 식품을 구분하고 중증 질환·면역저하 시 안전 확인을 권해 유지했다. ([Cell 연구 초록](https://pubmed.ncbi.nlm.nih.gov/34256014/), [NCCIH 프로바이오틱스 효과·안전](https://www.nccih.nih.gov/health/probiotics-usefulness-and-safety))
 - 자동 주장 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이었다. `npm run build`가 정적 경로 118개를 생성했다. 원문이 타당해 이번 차수는 본문 수정 없이 검증 기록만 갱신했다. 이 검증은 모든 의학적 주장에 대한 보증이나 AdSense 승인을 뜻하지 않는다.
 
+### 6단계 19차 원문 대조
+
+- 면역 영양소·감염 예방, 만성 불면증의 CBT-I, 보충제의 약물 상호작용·미국 FDA 규제, 스트레스와 소화불량 네 편을 NIH ODS·AASM·ACP·FDA·NIDDK 원문과 대조했다. 결핍이 없는 사람에게 보충제를 더 먹는다고 감염 예방이 보장되지 않는다는 설명과 면역 기능을 단일 수치로 나타내기 어렵다는 문구는 ODS 내용과 일치한다. ([NIH ODS 면역 기능 소비자 자료](https://ods.od.nih.gov/factsheets/ImmuneFunction-Consumer/))
+- 불면증 글의 만성 불면증 CBT-I 권고 및 수면위생 단독치료의 한계는 AASM·ACP 안내와 일치한다. 보충제의 사전 승인·상호작용 설명도 FDA의 미국 규제 안내를 한국 제도와 분리해 서술했다. 두 글은 유지했다. ([AASM 권고](https://aasm.org/new-guideline-supports-behavioral-psychological-treatments-for-insomnia/), [ACP 권고](https://www.acponline.org/acp-newsroom/acp-recommends-cognitive-behavioral-therapy-as-initial-treatment-forchronic-insomnia), [FDA 보충제 규제·안전](https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements))
+- 스트레스와 소화불량 글의 스트레스를 단일 원인으로 단정하지 않는 점과 진료 경고 신호는 NIDDK 설명에 부합한다. 독자가 증상·진료 필요 신호를 바로 확인하도록 해당 문단에 NIDDK 증상·원인 페이지 링크를 연결했다. ([NIDDK 소화불량 증상·원인](https://www.niddk.nih.gov/health-information/digestive-diseases/indigestion-dyspepsia/symptoms-causes))
+- 자동 주장 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이었다. `npm run build`가 정적 경로 118개를 생성했다. 이 차수는 면역·불면증·보충제 글은 유지하고, 소화불량 글의 NIDDK 출처 연결을 문맥에 맞게 보강했다. 편집·원문 대조는 AdSense 승인을 보장하지 않는다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
