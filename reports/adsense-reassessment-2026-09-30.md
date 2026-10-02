@@ -264,6 +264,13 @@
 - 유산소 운동 기본 가이드의 성인 주간 권고량, 중강도 대화 테스트, 짧은 활동부터 늘리기 문구는 WHO·CDC 지침에 부합했다. 침실 환경 글의 조용하고 편안하며 서늘한 환경, 취침 전 기기 사용 조절 및 불면증 치료 연결도 CDC·AASM 자료의 범위를 넘지 않아 유지했다. ([WHO 신체활동](https://www.who.int/news-room/fact-sheets/detail/physical-activity), [CDC 성인 권고](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html), [CDC 강도 측정](https://www.cdc.gov/physicalactivity/basics/measuring/index.html), [CDC 수면 안내](https://www.cdc.gov/sleep/about/), [AASM 불면증 지침](https://pubmed.ncbi.nlm.nih.gov/33164742/))
 - 항산화 식품·보충제 글은 NCCIH의 사람 대상 근거 한계와 베타카로틴 보충제 고위험군 주의를 재확인했다. 참고문헌의 이전 NCCIH URL이 현재 제목의 페이지로 리디렉션되어 최신 공식 주소로 교체했다. 자동 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0, 빌드는 정적 경로 118개 생성으로 통과했다. 커밋 `1605458`의 GitHub Actions `36958605849`가 성공했고, 네 공개 페이지 모두 HTTPS 200이며 최신 NCCIH 주소가 공개 HTML에서 확인됐다. 이번 원문 대조는 의학적 보증이나 AdSense 승인 보장이 아니다.
 
+### 6단계 23차 원문 대조
+
+- 간헐적 단식 안내와 2주 기록표는 NIA의 사람 대상 장기 효과·안전성 근거 한계, NIDDK의 당뇨병 환자 단식 시 저혈당·고혈당·탈수 및 의료진의 개별 약물 계획과 대조했다. 장시간 공복을 성공으로 보지 않고, 약 임의 조정 금지·중단 신호·개별 상담 안내를 유지했다. ([NIA 단식 연구 개요](https://www.nia.nih.gov/news/calorie-restriction-and-fasting-diets-what-do-we-know), [NIDDK 당뇨병과 단식 안전](https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/fasting-safely-with-diabetes))
+- 견과류 글의 특정 식품이 알츠하이머병을 예방한다고 할 수 없다는 설명은 NIA의 최신 안내와 일치했다. 건강한 식사 패턴의 잠재성은 인정하되 근거가 혼재돼 있고 특정 식품의 예방 효과는 입증되지 않았다는 균형을 유지했다. ([NIA 식사와 알츠하이머 예방 근거](https://www.nia.nih.gov/health/alzheimers-and-dementia/what-do-we-know-about-diet-and-prevention-alzheimers-disease))
+- 요가 입문 글의 초보자 거꾸로서기·강제호흡 회피, 임신·고혈압·녹내장·균형 문제에서의 수정 및 의료진 상담은 NCCIH 안내와 부합했다. 네 글 모두 본문 수정은 불필요해 유지했고 편집 대장에 재대조를 기록했다. ([NCCIH 요가 효과와 안전](https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety))
+- 자동 주장 점검·정적 빌드·배포는 이 기록 반영 후 확인한다. 이번 대조는 개별 의료 조언이나 AdSense 승인 보장이 아니다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
