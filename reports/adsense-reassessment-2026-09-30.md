@@ -271,6 +271,12 @@
 - 요가 입문 글의 초보자 거꾸로서기·강제호흡 회피, 임신·고혈압·녹내장·균형 문제에서의 수정 및 의료진 상담은 NCCIH 안내와 부합했다. 네 글 모두 본문 수정은 불필요해 유지했고 편집 대장에 재대조를 기록했다. ([NCCIH 요가 효과와 안전](https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety))
 - 자동 주장 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이었고, 정적 빌드는 118개 경로를 생성했다. 커밋 `ad5304c`의 GitHub Actions `36960006071`이 성공했으며 네 공개 페이지 모두 HTTPS 200을 반환했다. 이번 대조는 개별 의료 조언이나 AdSense 승인 보장이 아니다.
 
+### 6단계 24차 원문 대조
+
+- 칼슘·비타민 D 글의 식품 공급원, 고용량·상한량 고려와 레보티록신·퀴놀론계 항생제 상호작용 주의는 NIH ODS·NIAMS 자료에 부합했다. 글은 연령별 상한량을 임의의 단일 수치로 일반화하지 않고 약사·의료진 확인을 권해 유지했다. ([NIH ODS 칼슘 소비자 자료](https://ods.od.nih.gov/factsheets/Calcium-Consumer/), [NIH ODS 칼슘 전문가 자료](https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/), [NIAMS 칼슘·비타민 D](https://www.niams.nih.gov/health-topics/calcium-and-vitamin-d-important-bone-health))
+- 중장년 근력운동 안내의 주요 근육군 주 2일 이상, 점진적 시작, 균형·낙상 위험 고려와 동일 근육군 연속일 과훈련 회피는 NIA 안내와 부합했다. 허리 통증 글의 활동 유지 및 마미증후군 의심 시 새 배뇨·배변·성기능 변화 또는 회음부 감각 저하를 즉시 평가받으라는 기준은 NICE NG59·NG127과 부합했다. ([NIA 근력운동 유형](https://www.nia.nih.gov/health/exercise-and-physical-activity/three-types-exercise-can-improve-your-health-and-physical), [NICE 허리 통증 지침](https://www.nice.org.uk/guidance/ng59/chapter/Recommendations), [NICE 신경학적 증상·의뢰 지침](https://www.nice.org.uk/guidance/ng127/chapter/Recommendations-for-adults-aged-over-16))
+- 단식 시작 안전 조건 글의 장기 근거 불확실성, 당뇨병 환자 저혈당·고혈당·탈수 주의 및 의료진과의 개인별 약물·혈당 계획은 NIA·NIDDK 원문과 부합했다. 네 편은 본문 수정 없이 유지하고 재대조 결과를 편집 대장에 반영했다. 자동 점검·빌드·배포는 이 기록 반영 후 재확인한다. 이번 대조는 의료 조언이나 AdSense 승인 보장이 아니다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
