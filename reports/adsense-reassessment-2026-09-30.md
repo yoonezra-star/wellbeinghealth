@@ -275,7 +275,7 @@
 
 - 칼슘·비타민 D 글의 식품 공급원, 고용량·상한량 고려와 레보티록신·퀴놀론계 항생제 상호작용 주의는 NIH ODS·NIAMS 자료에 부합했다. 글은 연령별 상한량을 임의의 단일 수치로 일반화하지 않고 약사·의료진 확인을 권해 유지했다. ([NIH ODS 칼슘 소비자 자료](https://ods.od.nih.gov/factsheets/Calcium-Consumer/), [NIH ODS 칼슘 전문가 자료](https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/), [NIAMS 칼슘·비타민 D](https://www.niams.nih.gov/health-topics/calcium-and-vitamin-d-important-bone-health))
 - 중장년 근력운동 안내의 주요 근육군 주 2일 이상, 점진적 시작, 균형·낙상 위험 고려와 동일 근육군 연속일 과훈련 회피는 NIA 안내와 부합했다. 허리 통증 글의 활동 유지 및 마미증후군 의심 시 새 배뇨·배변·성기능 변화 또는 회음부 감각 저하를 즉시 평가받으라는 기준은 NICE NG59·NG127과 부합했다. ([NIA 근력운동 유형](https://www.nia.nih.gov/health/exercise-and-physical-activity/three-types-exercise-can-improve-your-health-and-physical), [NICE 허리 통증 지침](https://www.nice.org.uk/guidance/ng59/chapter/Recommendations), [NICE 신경학적 증상·의뢰 지침](https://www.nice.org.uk/guidance/ng127/chapter/Recommendations-for-adults-aged-over-16))
-- 단식 시작 안전 조건 글의 장기 근거 불확실성, 당뇨병 환자 저혈당·고혈당·탈수 주의 및 의료진과의 개인별 약물·혈당 계획은 NIA·NIDDK 원문과 부합했다. 네 편은 본문 수정 없이 유지하고 재대조 결과를 편집 대장에 반영했다. 자동 점검·빌드·배포는 이 기록 반영 후 재확인한다. 이번 대조는 의료 조언이나 AdSense 승인 보장이 아니다.
+- 단식 시작 안전 조건 글의 장기 근거 불확실성, 당뇨병 환자 저혈당·고혈당·탈수 주의 및 의료진과의 개인별 약물·혈당 계획은 NIA·NIDDK 원문과 부합했다. 네 편은 본문 수정 없이 유지하고 재대조 결과를 편집 대장에 반영했다. 자동 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이었고, 빌드는 정적 경로 118개를 생성했다. 커밋 `d43795d`의 GitHub Actions `36991837917`이 성공했으며 네 공개 페이지 모두 HTTPS 200을 반환했다. 이번 대조는 의료 조언이나 AdSense 승인 보장이 아니다.
 
 ### 미확인 범위
 
