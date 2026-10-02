@@ -252,6 +252,12 @@
 - 면역 광고 글은 NCCIH가 마늘 보충제와 감기에 관한 근거를 소규모·한계 있는 두 연구로 설명하는 점과 출혈·항응고제 주의를 반영해 본문에 직접 연결했다. 비타민 C·D·아연 식품표는 ODS의 영양소별 공급원 자료를 추가해 독자가 각 표 항목을 교차 확인할 수 있도록 했다. ([ODS 비타민 C](https://ods.od.nih.gov/factsheets/VitaminC-Consumer/), [ODS 비타민 D](https://ods.od.nih.gov/factsheets/VitaminD-Consumer/), [ODS 아연](https://ods.od.nih.gov/factsheets/Zinc-Consumer/))
 - 심장 운동 글의 성인 활동량, 대화 테스트, 점진적 시작과 중단·응급 신호는 WHO·AHA 안내와 부합했다. 자동 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이며, `npm run build`가 정적 경로 118개를 생성했다. 이 대조는 글의 모든 의학적 내용을 보증하거나 AdSense 승인을 보장하지 않는다. ([WHO 신체활동](https://www.who.int/europe/news-room/fact-sheets/item/physical-activity), [AHA 활동 계획·경고 신호](https://www.heart.org/en/health-topics/cardiac-rehab/getting-physically-active/develop-a-physical-activity-plan-for-you))
 
+### 6단계 21차 원문 대조
+
+- 긍정 확언 글은 초기 실험과 후속 재현 연구를 함께 반영했다. 2009년 연구에서 자존감이 낮은 참여자에게 부정적 결과가 관찰된 점과 2020년 두 재현 연구에서 그 차이가 확인되지 않은 점을 나란히 설명해, 확언을 보편적 치료법 또는 보편적 위해로 단정하지 않도록 보강했다. ([Wood 등, 2009](https://doi.org/10.1111/j.1467-9280.2009.02370.x), [Flynn·Bordieri, 2020](https://doi.org/10.1016/j.jcbs.2020.03.003))
+- 무릎 운동 글의 체중부하 곤란·심한 부종·열감 등 진료 신호와 운동 중 통증 시 중단 안내는 NHS·AAOS 자료에 부합해 유지했다. 7일 식사·움직임 계획은 치료·수명 연장 보장이 아닌 개인 일정에 맞춘 빈 계획 도구이며 WHO 식사 원칙과 CDC 주간 활동 권고에 맞아 유지했다. ([NHS 무릎 통증](https://www.nhs.uk/symptoms/knee-pain/), [AAOS 무릎 운동 프로그램](https://orthoinfo.aaos.org/globalassets/pdfs/2017-rehab_knee.pdf), [WHO 건강 식사](https://www.who.int/news-room/fact-sheets/detail/healthy-diet), [CDC 성인 활동 권고](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html))
+- 일상 유산소 활동 글의 WHO·CDC 주간 권고량과 주간 단위 기록 방식은 타당하다. 참고자료 중 CDC 주소 하나가 일반 홈페이지로 연결되어 최신 성인 활동 지침 페이지로 교체했다. 자동 주장 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이며, `npm run build`는 정적 경로 118개를 생성했다. 생성된 HTML에서도 연구 인용과 새 CDC 링크를 확인했다. 배포 확인은 GitHub Actions 완료 후 기록한다. 이 대조는 모든 주장에 대한 보증이나 AdSense 승인을 의미하지 않는다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
