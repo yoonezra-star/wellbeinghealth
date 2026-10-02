@@ -232,6 +232,13 @@
 - 우울감 글의 2주 이상 증상 평가, 계절성 우울증 광선치료의 별도 적용·주의, 자외선 보호 안내와 채소의 흐르는 물 세척·세제 금지·교차오염·냉장 보관 문구도 원문과 맞아 유지했다. ([NIMH 우울증](https://www.nimh.nih.gov/health/publications/depression), [NIMH 계절성 우울증](https://www.nimh.nih.gov/health/publications/seasonal-affective-disorder), [CDC 자외선 안전](https://www.cdc.gov/skin-cancer/sun-safety/), [FDA 농산물 안전](https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely))
 - 자동 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이다. 이는 사실 판정이나 승인 예측이 아니다. `npm run build`에서 정적 경로 118개를 생성했다.
 
+### 6단계 18차 원문 대조
+
+- 근력운동 시작, 대사증후군 검사·생활관리, 마음챙김, 발효식품·프로바이오틱스 네 편을 WHO·NIA·NHLBI·NCCIH 및 1차 연구와 대조했다. 성인 근력활동 주 2일 이상 권고는 인구 수준 지침으로 표현되어 있고, 운동 예시는 개인 처방과 분리되어 있어 유지했다. ([WHO 신체활동 지침](https://www.who.int/europe/news-room/fact-sheets/item/physical-activity), [NIA 근력·균형 운동](https://www.nia.nih.gov/health/four-types-exercise-can-improve-your-health-and-physical-ability))
+- 대사증후군 글은 체중만으로 자가진단하지 않고 여러 위험요인의 검사·전문가 해석을 권하며 처방약 임의 조정을 금지한다. 마음챙김 글은 효과를 보장하지 않고 부정적 경험 시 중단, 기존 치료 대체 금지와 도움 요청을 설명한다. 두 글 모두 출처와 주의 문구가 원문에 부합해 유지했다. ([NHLBI 진단](https://www.nhlbi.nih.gov/health/metabolic-syndrome/diagnosis), [NHLBI 생활관리](https://www.nhlbi.nih.gov/health/metabolic-syndrome/treatment), [NCCIH 마음챙김 효과·안전](https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety))
+- 발효식품 글의 건강한 성인 36명·17주 무작위 식사 연구 설명은 연구의 범위를 넘지 않으며, 이를 특정 발효식품의 질환 예방이나 치료 증거로 확대하지 않는다. 보충제와 식품을 구분하고 중증 질환·면역저하 시 안전 확인을 권해 유지했다. ([Cell 연구 초록](https://pubmed.ncbi.nlm.nih.gov/34256014/), [NCCIH 프로바이오틱스 효과·안전](https://www.nccih.nih.gov/health/probiotics-usefulness-and-safety))
+- 자동 주장 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이었다. `npm run build`가 정적 경로 118개를 생성했다. 원문이 타당해 이번 차수는 본문 수정 없이 검증 기록만 갱신했다. 이 검증은 모든 의학적 주장에 대한 보증이나 AdSense 승인을 뜻하지 않는다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
