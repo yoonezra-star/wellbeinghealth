@@ -246,6 +246,12 @@
 - 스트레스와 소화불량 글의 스트레스를 단일 원인으로 단정하지 않는 점과 진료 경고 신호는 NIDDK 설명에 부합한다. 독자가 증상·진료 필요 신호를 바로 확인하도록 해당 문단에 NIDDK 증상·원인 페이지 링크를 연결했다. ([NIDDK 소화불량 증상·원인](https://www.niddk.nih.gov/health-information/digestive-diseases/indigestion-dyspepsia/symptoms-causes))
 - 자동 주장 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이었다. `npm run build`가 정적 경로 118개를 생성했다. 이 차수는 면역·불면증·보충제 글은 유지하고, 소화불량 글의 NIDDK 출처 연결을 문맥에 맞게 보강했다. 편집·원문 대조는 AdSense 승인을 보장하지 않는다.
 
+### 6단계 20차 원문 대조
+
+- 면역 슈퍼푸드 광고 점검표, 탈모 진료 준비, 면역 영양소 식품표, 심장 건강 운동 네 편을 NCCIH·질병관리청·미국피부과학회·NIH ODS·WHO·미국심장협회 원문과 대조했다. 베리·채소·요거트·마늘을 감염 치료제로 제시하지 않는 설명과 탈모 원인별 평가·검사 안내는 근거 범위에 부합해 유지했다. ([NCCIH 마늘 근거·안전](https://www.nccih.nih.gov/health/garlic), [질병관리청 남성형 탈모](https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=2067), [질병관리청 원형탈모](https://health.kdca.go.kr/healthinfo/biz/health/gnrlzHealthInfo/gnrlzHealthInfo/gnrlzHealthInfoView.do?cntnts_sn=6700), [AAD 진단·치료](https://www.aad.org/public/diseases/hair-loss/treatment/diagnosis-treat))
+- 면역 광고 글은 NCCIH가 마늘 보충제와 감기에 관한 근거를 소규모·한계 있는 두 연구로 설명하는 점과 출혈·항응고제 주의를 반영해 본문에 직접 연결했다. 비타민 C·D·아연 식품표는 ODS의 영양소별 공급원 자료를 추가해 독자가 각 표 항목을 교차 확인할 수 있도록 했다. ([ODS 비타민 C](https://ods.od.nih.gov/factsheets/VitaminC-Consumer/), [ODS 비타민 D](https://ods.od.nih.gov/factsheets/VitaminD-Consumer/), [ODS 아연](https://ods.od.nih.gov/factsheets/Zinc-Consumer/))
+- 심장 운동 글의 성인 활동량, 대화 테스트, 점진적 시작과 중단·응급 신호는 WHO·AHA 안내와 부합했다. 자동 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이며, `npm run build`가 정적 경로 118개를 생성했다. 이 대조는 글의 모든 의학적 내용을 보증하거나 AdSense 승인을 보장하지 않는다. ([WHO 신체활동](https://www.who.int/europe/news-room/fact-sheets/item/physical-activity), [AHA 활동 계획·경고 신호](https://www.heart.org/en/health-topics/cardiac-rehab/getting-physically-active/develop-a-physical-activity-plan-for-you))
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
