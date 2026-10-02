@@ -262,7 +262,7 @@
 
 - 알레르기 비염·감기 글의 알레르겐 관련 가려움·재채기·콧물, 감기의 바이러스성·전파와 증상, 습도 30~50%(가능하면 60% 미만) 및 가습기 물 비우기·세척·건조 안내를 MedlinePlus·CDC·EPA 원문과 대조했다. 본문은 진단을 단정하지 않고 고위험군과 악화 신호를 구분해 유지했다. ([MedlinePlus 알레르기 비염](https://medlineplus.gov/ency/article/000813.htm), [CDC 감기](https://www.cdc.gov/common-cold/about/), [EPA 습기·곰팡이 안내](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home), [CDC 가습기 관리](https://www.cdc.gov/drinking-water/prevention/preventing-waterborne-germs-at-home.html))
 - 유산소 운동 기본 가이드의 성인 주간 권고량, 중강도 대화 테스트, 짧은 활동부터 늘리기 문구는 WHO·CDC 지침에 부합했다. 침실 환경 글의 조용하고 편안하며 서늘한 환경, 취침 전 기기 사용 조절 및 불면증 치료 연결도 CDC·AASM 자료의 범위를 넘지 않아 유지했다. ([WHO 신체활동](https://www.who.int/news-room/fact-sheets/detail/physical-activity), [CDC 성인 권고](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html), [CDC 강도 측정](https://www.cdc.gov/physicalactivity/basics/measuring/index.html), [CDC 수면 안내](https://www.cdc.gov/sleep/about/), [AASM 불면증 지침](https://pubmed.ncbi.nlm.nih.gov/33164742/))
-- 항산화 식품·보충제 글은 NCCIH의 사람 대상 근거 한계와 베타카로틴 보충제 고위험군 주의를 재확인했다. 참고문헌의 이전 NCCIH URL이 현재 제목의 페이지로 리디렉션되어 최신 공식 주소로 교체했다. 자동 주장 점검·빌드·배포는 이 수정 반영 후 재확인한다. 이번 원문 대조는 의학적 보증이나 AdSense 승인 보장이 아니다.
+- 항산화 식품·보충제 글은 NCCIH의 사람 대상 근거 한계와 베타카로틴 보충제 고위험군 주의를 재확인했다. 참고문헌의 이전 NCCIH URL이 현재 제목의 페이지로 리디렉션되어 최신 공식 주소로 교체했다. 자동 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0, 빌드는 정적 경로 118개 생성으로 통과했다. 커밋 `1605458`의 GitHub Actions `36958605849`가 성공했고, 네 공개 페이지 모두 HTTPS 200이며 최신 NCCIH 주소가 공개 HTML에서 확인됐다. 이번 원문 대조는 의학적 보증이나 AdSense 승인 보장이 아니다.
 
 ### 미확인 범위
 
