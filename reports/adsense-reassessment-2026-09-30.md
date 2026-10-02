@@ -258,6 +258,12 @@
 - 무릎 운동 글의 체중부하 곤란·심한 부종·열감 등 진료 신호와 운동 중 통증 시 중단 안내는 NHS·AAOS 자료에 부합해 유지했다. 7일 식사·움직임 계획은 치료·수명 연장 보장이 아닌 개인 일정에 맞춘 빈 계획 도구이며 WHO 식사 원칙과 CDC 주간 활동 권고에 맞아 유지했다. ([NHS 무릎 통증](https://www.nhs.uk/symptoms/knee-pain/), [AAOS 무릎 운동 프로그램](https://orthoinfo.aaos.org/globalassets/pdfs/2017-rehab_knee.pdf), [WHO 건강 식사](https://www.who.int/news-room/fact-sheets/detail/healthy-diet), [CDC 성인 활동 권고](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html))
 - 일상 유산소 활동 글의 WHO·CDC 주간 권고량과 주간 단위 기록 방식은 타당하다. 참고자료 중 CDC 주소 하나가 일반 홈페이지로 연결되어 최신 성인 활동 지침 페이지로 교체했다. 자동 주장 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이며, `npm run build`는 정적 경로 118개를 생성했다. 배포 커밋 `f14b473`의 GitHub Actions `36957669246`이 성공했고, 두 공개 페이지 모두 HTTPS 200으로 연구 인용과 새 CDC 링크를 확인했다. 이 대조는 모든 주장에 대한 보증이나 AdSense 승인을 의미하지 않는다.
 
+### 6단계 22차 원문 대조
+
+- 알레르기 비염·감기 글의 알레르겐 관련 가려움·재채기·콧물, 감기의 바이러스성·전파와 증상, 습도 30~50%(가능하면 60% 미만) 및 가습기 물 비우기·세척·건조 안내를 MedlinePlus·CDC·EPA 원문과 대조했다. 본문은 진단을 단정하지 않고 고위험군과 악화 신호를 구분해 유지했다. ([MedlinePlus 알레르기 비염](https://medlineplus.gov/ency/article/000813.htm), [CDC 감기](https://www.cdc.gov/common-cold/about/), [EPA 습기·곰팡이 안내](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home), [CDC 가습기 관리](https://www.cdc.gov/drinking-water/prevention/preventing-waterborne-germs-at-home.html))
+- 유산소 운동 기본 가이드의 성인 주간 권고량, 중강도 대화 테스트, 짧은 활동부터 늘리기 문구는 WHO·CDC 지침에 부합했다. 침실 환경 글의 조용하고 편안하며 서늘한 환경, 취침 전 기기 사용 조절 및 불면증 치료 연결도 CDC·AASM 자료의 범위를 넘지 않아 유지했다. ([WHO 신체활동](https://www.who.int/news-room/fact-sheets/detail/physical-activity), [CDC 성인 권고](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html), [CDC 강도 측정](https://www.cdc.gov/physicalactivity/basics/measuring/index.html), [CDC 수면 안내](https://www.cdc.gov/sleep/about/), [AASM 불면증 지침](https://pubmed.ncbi.nlm.nih.gov/33164742/))
+- 항산화 식품·보충제 글은 NCCIH의 사람 대상 근거 한계와 베타카로틴 보충제 고위험군 주의를 재확인했다. 참고문헌의 이전 NCCIH URL이 현재 제목의 페이지로 리디렉션되어 최신 공식 주소로 교체했다. 자동 주장 점검·빌드·배포는 이 수정 반영 후 재확인한다. 이번 원문 대조는 의학적 보증이나 AdSense 승인 보장이 아니다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
