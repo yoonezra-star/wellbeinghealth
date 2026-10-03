@@ -316,7 +316,7 @@
 - 대표 가이드의 구체적인 4주 진도표는 전용 기록 글과 내용이 겹쳐 간결한 개인별 조정 원칙으로 바꾸고 두 실용 도구로 연결했다. 주간 계획표는 보편적인 첫 주 목표를 정하지 않고 실제 가능한 요일·시간, 활동 및 회복 메모를 작성하게 했다. 4주 표도 자동 증량 처방이 아니라 계획을 유지·줄임·쉼 중 선택하는 점검 도구로 구성했다.
 - WHO의 성인 주간 활동 권고, CDC 대화 검사 및 성인 활동 지침과 AHA 운동 중 경고 신호 안내를 대조했다. 강도 대화 검사는 의료 평가가 아닌 참고법으로 한정했고, 가슴 통증·실신할 듯한 어지럼·비정상적 호흡곤란 등 중단 및 의료 도움 신호를 유지했다. ([WHO 신체활동](https://www.who.int/europe/news-room/fact-sheets/item/physical-activity), [CDC 대화 검사](https://www.cdc.gov/physicalactivity/basics/measuring/index.html), [CDC 성인 활동 지침](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html), [AHA 활동 중 경고 신호](https://www.heart.org/en/health-topics/cardiac-rehab/getting-physically-active/develop-a-physical-activity-plan-for-you))
 - 자동 주장 점검은 106편 중 high 0 / review 32 / lower 74 / 본문 직접 링크 누락 0이다. 정적 내보내기 검사는 게시물 106편 전체 필수 마크업, 내부 링크 오류 0, 필수 파일 누락 0으로 통과했고, `npm run build`에서 정적 경로 118개를 생성했다. 휴리스틱 점수는 의료 사실검증 결과나 AdSense 승인 예측이 아니다.
-- 배포 전 검증 완료: 생성된 HTML에서 계획표·기록 글의 새 제목과 대표 가이드 간 상호 링크를 확인했다. 배포 후 HTTPS 상태와 공개 HTML 반영은 GitHub Actions 완료 뒤 별도로 기록한다.
+- 배포 확인: 콘텐츠 커밋 `7f850e8`의 GitHub Actions `37113546213`이 Build와 Cloudflare Pages Deploy 모두 성공했다. 계획표·4주 기록표·대표 가이드의 기존 URL 세 곳이 사용자 도메인에서 모두 HTTPS 200을 반환했고, 새 제목과 각 표가 공개 HTML에 반영됐다. [GitHub Actions 실행](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/37113546213).
 
 ### 미확인 범위
 
