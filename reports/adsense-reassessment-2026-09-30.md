@@ -285,6 +285,14 @@
 - 만성 근골격 통증 글은 류마티스관절염 식이 메타분석의 매우 낮은 근거 확실성과 섬유근육통 식이 연구의 표본·방법 이질성 및 편향을 과장 없이 기술했다. 특정 식품·식단을 일반 통증 치료제로 제시하지 않아 유지했다. ([류마티스관절염 체계적 고찰](https://pubmed.ncbi.nlm.nih.gov/34959772/), [섬유근육통 식이 체계적 고찰](https://pubmed.ncbi.nlm.nih.gov/32878326/))
 - 자동 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이었고, 빌드는 정적 경로 118개를 생성했다. 커밋 `b16f425`의 GitHub Actions `37101931476`이 성공했으며 네 공개 페이지가 HTTPS 200을 반환했다. 수면 글의 보완 문장과 NHLBI 링크도 공개 HTML에서 확인했다. 대조와 수정은 개별 진단·치료 조언이나 AdSense 승인을 보장하지 않는다.
 
+### 6단계 26차 원문 대조
+
+- 가슴 답답함·호흡 연습 글은 NHS의 부드럽고 무리하지 않는 호흡 안내와 흉통·심한 호흡곤란 응급 신호, NIMH의 공황장애 증상·치료 안내와 대조했다. 증상을 공황으로 단정하지 않고 호흡 연습을 보조 수단으로 한정한 기존 설명이 부합해 유지했다. ([NHS 호흡 연습](https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/), [NHS 흉통·심장마비 응급 신호](https://www.nhs.uk/conditions/heart-attack/), [NIMH 공황장애 안내](https://www.nimh.nih.gov/health/publications/panic-disorder-when-fear-overwhelms))
+- 근력운동 시작 글의 성인 주요 근육군 근력활동 주 2일 이상은 WHO의 공중보건 권고와 일치한다. 본문은 이를 개인 운동 처방과 구분하고, 작은 단계로 시작해 증상에 따라 조절하도록 안내해 유지했다. ([WHO 신체활동 권고](https://www.who.int/initiatives/behealthy/physical-activity))
+- 대사증후군 글은 허리둘레만으로 진단하지 않고 혈압 및 혈당·지질 검사와 의료진의 종합 평가를 권한다. 이는 NHLBI 진단 안내와 부합하며, 처방약 임의 변경 금지와 응급 증상 안내도 유지했다. ([NHLBI 진단](https://www.nhlbi.nih.gov/health/metabolic-syndrome/diagnosis), [NHLBI 치료·생활관리](https://www.nhlbi.nih.gov/health/metabolic-syndrome/treatment))
+- 면역 식품 글의 결핍과 정상 면역 기능을 구분하고, 결핍이 없는 상태에서 보충제를 늘려도 대개 감염 예방·회복 이점이 없다는 설명은 NIH ODS 소비자 자료와 부합한다. 실험실 표지자와 감염 같은 임상 결과를 구분한 점도 유지했다. ([NIH ODS 소비자 자료](https://ods.od.nih.gov/factsheets/ImmuneFunction-Consumer/), [NIH ODS 전문가 자료](https://ods.od.nih.gov/factsheets/ImmuneFunction-HealthProfessional/))
+- 네 편은 원문 수정 없이 재대조 기록만 추가했다. 106개 게시물 기준 자동 점검은 high 0 / review 36 / lower 70 / 본문 직접 링크 누락 0으로 확인했다. 이 휴리스틱 집계는 의료 사실검증 점수나 애드센스 승인 예측이 아니다. 이번 차수의 원문 대조 역시 개별 의료 조언이나 승인 보장이 아니다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.
