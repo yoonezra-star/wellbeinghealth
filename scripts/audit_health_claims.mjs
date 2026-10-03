@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import assert from "node:assert/strict";
 import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 
@@ -27,6 +28,26 @@ function countMatches(value, pattern) {
   return (value.match(pattern) || []).length;
 }
 
+function countGuaranteeClaims(value) {
+  let count = 0;
+  for (const match of value.matchAll(guaranteePattern)) {
+    const previousCharacter = value.slice(Math.max(0, match.index - 1), match.index);
+    const followingText = value.slice(match.index + match[0].length, match.index + match[0].length + 24);
+
+    if (match[0] === "기적" && previousCharacter === "장") continue;
+    if (match[0] === "확실한" && previousCharacter === "불") continue;
+    if (match[0] === "반드시" && /(필요(?:는)?\s*없|않|아니|없|못)/.test(followingText)) continue;
+    count += 1;
+  }
+  return count;
+}
+
+assert.equal(
+  countGuaranteeClaims("장기적인 효과는 불확실하며, 공복 시간을 반드시 늘릴 필요는 없습니다."),
+  0
+);
+assert.equal(countGuaranteeClaims("이 식품은 감염을 예방한다."), 1);
+
 const results = fs
   .readdirSync(postsDirectory)
   .filter((fileName) => fileName.endsWith(".md"))
@@ -36,7 +57,7 @@ const results = fs
     const content = parsed.content;
     const links = countMatches(content, linkPattern);
     const clinical = countMatches(`${title}\n${content}`, clinicalPattern);
-    const guarantees = countMatches(`${title}\n${content}`, guaranteePattern);
+    const guarantees = countGuaranteeClaims(`${title}\n${content}`);
     const personal = countMatches(content, personalPattern);
     const statistics = countMatches(content, statisticPattern);
     const careSignals = countMatches(content, carePattern);

@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "site", "out");
+const postsRoot = path.join(path.dirname(root), "content", "posts");
 
 function walk(directory) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
@@ -21,7 +22,17 @@ function routeTarget(href) {
 }
 
 const htmlFiles = walk(root).filter((file) => file.endsWith(".html"));
-const articleFiles = htmlFiles.filter((file) => file.includes(`${path.sep}blog${path.sep}`));
+const blogRoot = path.join(root, "blog");
+const articleFiles = htmlFiles.filter(
+  (file) =>
+    file.startsWith(`${blogRoot}${path.sep}`) &&
+    file !== path.join(blogRoot, "index.html") &&
+    path.basename(file) === "index.html"
+);
+const articleFileSet = new Set(articleFiles);
+const expectedArticleCount = fs
+  .readdirSync(postsRoot)
+  .filter((file) => file.endsWith(".md")).length;
 const brokenLinks = [];
 let articleChecks = 0;
 
@@ -35,11 +46,11 @@ for (const file of htmlFiles) {
     if (!fs.existsSync(target)) brokenLinks.push({ file: path.relative(root, file), href });
   }
 
-  if (file.includes(`${path.sep}blog${path.sep}`) && file.endsWith("index.html")) {
+  if (articleFileSet.has(file)) {
     const required = [
       'rel="canonical"',
       "건강정보 이용 안내",
-      "편집팀 참고자료",
+      "주제별 일반 참고자료",
       "관련 아티클",
       '"@type":"BlogPosting"',
       'google-adsense-account',
@@ -54,7 +65,8 @@ const requiredFiles = ["ads.txt", "robots.txt", "sitemap.xml"].filter(
 
 const report = {
   htmlFiles: htmlFiles.length,
-  articleFiles: articleFiles.filter((file) => file.endsWith("index.html")).length,
+  articleFiles: articleFiles.length,
+  expectedArticleCount,
   fullyMarkedArticles: articleChecks,
   brokenInternalLinks: brokenLinks,
   missingRequiredFiles: requiredFiles,
@@ -62,4 +74,6 @@ const report = {
 
 console.log(JSON.stringify(report, null, 2));
 
-if (brokenLinks.length || requiredFiles.length || articleChecks !== 106) process.exitCode = 1;
+if (brokenLinks.length || requiredFiles.length || articleChecks !== expectedArticleCount) {
+  process.exitCode = 1;
+}
