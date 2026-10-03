@@ -293,6 +293,14 @@
 - 면역 식품 글의 결핍과 정상 면역 기능을 구분하고, 결핍이 없는 상태에서 보충제를 늘려도 대개 감염 예방·회복 이점이 없다는 설명은 NIH ODS 소비자 자료와 부합한다. 실험실 표지자와 감염 같은 임상 결과를 구분한 점도 유지했다. ([NIH ODS 소비자 자료](https://ods.od.nih.gov/factsheets/ImmuneFunction-Consumer/), [NIH ODS 전문가 자료](https://ods.od.nih.gov/factsheets/ImmuneFunction-HealthProfessional/))
 - 네 편은 원문 수정 없이 재대조 기록만 추가했다. 106개 게시물 기준 자동 점검은 high 0 / review 36 / lower 70 / 본문 직접 링크 누락 0으로 확인했다. 이 휴리스틱 집계는 의료 사실검증 점수나 애드센스 승인 예측이 아니다. 이번 차수의 원문 대조 역시 개별 의료 조언이나 승인 보장이 아니다.
 
+### 6단계 27차 원문 대조
+
+- 상위 review 후보 중 알레르기 비염·감기, 성인 유산소 운동, 수면 환경 글은 이전 차수의 대조 기록이 있어 그 결과를 반복 검토로 표시했다. MedlinePlus의 비염 증상, CDC의 감기 전파·증상, EPA의 습도 관리와 WHO의 성인 주간 활동 권고는 유지했다. 침실의 조용하고 편안하며 서늘한 환경과 취침 전 기기 조절 역시 CDC 안내 및 만성 불면증의 CBT-I 지침을 대체하지 않는다는 문구와 부합해 그대로 두었다. ([MedlinePlus 비염](https://medlineplus.gov/ency/article/000813.htm), [CDC 감기](https://www.cdc.gov/common-cold/about/), [EPA 습기·곰팡이](https://www.epa.gov/mold/brief-guide-mold-moisture-and-your-home), [WHO 신체활동](https://www.who.int/news-room/fact-sheets/detail/physical-activity), [CDC 수면 습관](https://www.cdc.gov/sleep/about/))
+- 비염 글의 코 세척은 멸균수·증류수·끓였다 식힌 물 사용 외에 수돗물 금지와 세척 기기의 세척·건조를 명시하고 FDA 직접 안내를 연결했다. ([FDA 코 세척 안전](https://www.fda.gov/consumers/consumer-updates/rinsing-your-sinuses-neti-pots-safe))
+- 2주 단식 기록표는 NIA의 사람 대상 장기 효과·안전성 불확실성 및 NIDDK의 당뇨병 단식 위험과 대조했다. 2주를 검증된 안전성 시험기간처럼 읽지 않도록 한계를 명시하고, 근거가 특정되지 않은 30~60분 공복 연장 권고를 제거했다. 이미 있는 16:8 개요 글은 방식·시간표 설명, 시작 전 안전 글은 위험군 상담, 이 글은 증상과 일상 기능 기록이라는 독자 역할을 각각 유지했다. ([NIA 단식 근거](https://www.nia.nih.gov/news/calorie-restriction-and-fasting-diets-what-do-we-know), [NIDDK 당뇨병과 단식 안전](https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/fasting-safely-with-diabetes))
+- 유산소 운동 글의 WHO 150~300분 중강도 또는 75~150분 고강도 권고와 CDC의 활동 분할·적은 양부터 시작 원칙을 재확인하고, CDC 링크를 성인 활동 지침 페이지로 교체했다. ([WHO 신체활동](https://www.who.int/news-room/fact-sheets/detail/physical-activity), [CDC 성인 활동 지침](https://www.cdc.gov/physical-activity-basics/guidelines/adults.html))
+- 자동 점검은 106편 중 high 1 / review 35 / lower 70 / 본문 직접 링크 누락 0으로 표시됐다. 유일한 high 항목인 단식 기록표는 규칙이 `장기적인` 안의 `기적`, `불확실한` 안의 `확실한`, 부정문 `반드시 늘릴 필요는 없습니다`를 각각 보장 표현으로 오인한 명백한 휴리스틱 오탐이다. 원문 수동 확인에서는 과장 주장을 찾지 못했으며, 이 점수 자체는 의학적 사실 판정이 아니다. 수정한 세 글의 갱신일·단어 수·링크 수를 편집대장에 반영했다. `npm run build`가 통과해 정적 경로 118개를 생성했고, 생성 HTML에서 단식 기록기간 경계, FDA 코 세척 안전문, 새 CDC 링크를 확인했다. 배포 후 공개 URL 확인 결과를 이어서 기록한다. 원문 대조는 의료 조언이나 애드센스 승인을 보장하지 않는다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.

@@ -2,12 +2,24 @@
   "generated": "2026-10-03",
   "summary": {
     "audited": 106,
-    "high": 0,
-    "review": 36,
+    "high": 1,
+    "review": 35,
     "lower": 70,
     "noDirectLinks": 0
   },
   "results": [
+    {
+      "fileName": "2026-06-25-간헐적-단식의-모든-것-효과-방법-그리고-주의사항.md",
+      "title": "간헐적 단식 2주 기록표: 계속할지 중단할지 판단하기",
+      "score": 15,
+      "level": "high",
+      "clinical": 10,
+      "guarantees": 3,
+      "personal": 1,
+      "statistics": 1,
+      "links": 5,
+      "careSignals": 8
+    },
     {
       "fileName": "intermittent-fasting-guide.md",
       "title": "16:8 간헐적 단식 실천 체크리스트: 시간표보다 중요한 기준",
@@ -29,7 +41,7 @@
       "guarantees": 2,
       "personal": 0,
       "statistics": 2,
-      "links": 4,
+      "links": 6,
       "careSignals": 5
     },
     {
@@ -67,18 +79,6 @@
       "statistics": 0,
       "links": 5,
       "careSignals": 5
-    },
-    {
-      "fileName": "2026-06-25-간헐적-단식의-모든-것-효과-방법-그리고-주의사항.md",
-      "title": "간헐적 단식 2주 기록표: 계속할지 중단할지 판단하기",
-      "score": 11,
-      "level": "review",
-      "clinical": 10,
-      "guarantees": 1,
-      "personal": 1,
-      "statistics": 3,
-      "links": 5,
-      "careSignals": 8
     },
     {
       "fileName": "2026-03-15-내-몸의-청소-시간-간헐적-단식-다이어트-조절법과-주.md",
