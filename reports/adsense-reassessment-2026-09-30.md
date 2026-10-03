@@ -277,6 +277,14 @@
 - 중장년 근력운동 안내의 주요 근육군 주 2일 이상, 점진적 시작, 균형·낙상 위험 고려와 동일 근육군 연속일 과훈련 회피는 NIA 안내와 부합했다. 허리 통증 글의 활동 유지 및 마미증후군 의심 시 새 배뇨·배변·성기능 변화 또는 회음부 감각 저하를 즉시 평가받으라는 기준은 NICE NG59·NG127과 부합했다. ([NIA 근력운동 유형](https://www.nia.nih.gov/health/exercise-and-physical-activity/three-types-exercise-can-improve-your-health-and-physical), [NICE 허리 통증 지침](https://www.nice.org.uk/guidance/ng59/chapter/Recommendations), [NICE 신경학적 증상·의뢰 지침](https://www.nice.org.uk/guidance/ng127/chapter/Recommendations-for-adults-aged-over-16))
 - 단식 시작 안전 조건 글의 장기 근거 불확실성, 당뇨병 환자 저혈당·고혈당·탈수 주의 및 의료진과의 개인별 약물·혈당 계획은 NIA·NIDDK 원문과 부합했다. 네 편은 본문 수정 없이 유지하고 재대조 결과를 편집 대장에 반영했다. 자동 점검은 106편 중 high 0 / review 36 / lower 70 / 직접 링크 누락 0이었고, 빌드는 정적 경로 118개를 생성했다. 커밋 `d43795d`의 GitHub Actions `36991837917`이 성공했으며 네 공개 페이지 모두 HTTPS 200을 반환했다. 이번 대조는 의료 조언이나 AdSense 승인 보장이 아니다.
 
+### 6단계 25차 원문 대조
+
+- 단기간 감량 글은 CDC가 안내하는 완만한 감량의 일반적 유지 가능성과 NIDDK의 빠른 감량·장시간 금식 시 담석 위험을 재확인했다. 글은 주당 감량 수치를 보편 처방으로 제시하지 않고 개인차·안전 조건을 구분한다. ([CDC 감량 단계](https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html), [NIDDK 담석과 식이](https://www.niddk.nih.gov/health-information/digestive-diseases/gallstones/dieting))
+- 독서 글은 NIA가 인지 자극 활동의 잠재 이점을 언급하면서도 관찰연구가 인과성을 입증하지 않는다고 구분한 설명과 부합했다. 식사·취미를 치매 예방 보장으로 제시하지 않는 문구를 유지했다. ([NIA 알츠하이머 예방 근거](https://www.nia.nih.gov/health/alzheimers-and-dementia/preventing-alzheimers-disease-what-do-we-know))
+- 수면 습관 글의 만성 불면증 기준에 ‘충분한 수면 기회와 적절한 환경에도 불구하고’라는 핵심 조건을 보태고 NHLBI 진단 원문을 연결했다. 주 3회 이상·3개월 이상과 낮 기능 영향은 전문가가 종합 판단하는 정보로 구분했다. AASM의 성인 만성 불면증 CBT-I 강한 권고와 수면위생 단독치료의 한계 설명은 지침에 부합한다. ([NHLBI 불면증 진단](https://www.nhlbi.nih.gov/health/insomnia/diagnosis), [AASM 임상 지침 원문](https://pubmed.ncbi.nlm.nih.gov/33164742/))
+- 만성 근골격 통증 글은 류마티스관절염 식이 메타분석의 매우 낮은 근거 확실성과 섬유근육통 식이 연구의 표본·방법 이질성 및 편향을 과장 없이 기술했다. 특정 식품·식단을 일반 통증 치료제로 제시하지 않아 유지했다. ([류마티스관절염 체계적 고찰](https://pubmed.ncbi.nlm.nih.gov/34959772/), [섬유근육통 식이 체계적 고찰](https://pubmed.ncbi.nlm.nih.gov/32878326/))
+- 25차 반영 뒤 자동 주장 점검·빌드·배포를 실행해 결과를 기록한다. 대조와 수정은 개별 진단·치료 조언이나 AdSense 승인을 보장하지 않는다.
+
 ### 미확인 범위
 
 전체 논문의 의학적 사실 대조는 계속 진행 중이며, 외부 링크는 155개를 자동 확인했지만 HEAD를 차단하거나 시간 초과한 원문은 브라우저 확인이 필요하다. 현행 원 WordPress 미디어와의 대조, Core Web Vitals 실측, 실제 이용자 데이터는 미확인이다. 저장소 복원 기준본과 비교한 로컬 이미지 매핑은 106개 글 모두 완료했다. 113개 모바일 경로 전체 점검은 앞선 빌드에서 수행했고, 이번 변경 글 다섯 편은 공개본에서 320px 레이아웃을 재확인했다. 이 점검들은 모든 글의 정확성이나 AdSense 승인을 뜻하지 않는다.

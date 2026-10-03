@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02",
+  "generated": "2026-10-03",
   "summary": {
     "audited": 106,
     "high": 0,
@@ -221,7 +221,7 @@
       "guarantees": 0,
       "personal": 2,
       "statistics": 4,
-      "links": 2,
+      "links": 3,
       "careSignals": 4
     },
     {
