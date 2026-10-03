@@ -107,7 +107,7 @@ export const TOPIC_GUIDES: TopicGuide[] = [
   {
     id: "mediterranean-diet",
     label: "지중해식 식사 가이드",
-    description: "지중해식 식사의 공통 원칙을 한국 식재료, 장보기, 외식과 주간 식단에 적용하는 글을 묶었습니다.",
+    description: "한국 식탁의 기본 원칙, 한 가지씩 바꾸는 방법, 3일 식사 준비표, PREDIMED 연구 해석을 주제별로 안내합니다.",
     pillarSlug: "2026-06-22-지중해식단-건강과-맛을-동시에-챙기는-완벽한-방법",
     postSlugs: [
       "2026-06-22-지중해식단-건강과-맛을-동시에-챙기는-완벽한-방법",

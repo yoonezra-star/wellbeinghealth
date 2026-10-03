@@ -585,18 +585,6 @@
       "careSignals": 9
     },
     {
-      "fileName": "2026-06-03-지중해식단-건강과-장수를-위한-최고의-선택.md",
-      "title": "지중해식 식사, 한국 식탁에서 시작하는 한 주 실천법",
-      "score": 6,
-      "level": "lower",
-      "clinical": 2,
-      "guarantees": 1,
-      "personal": 0,
-      "statistics": 1,
-      "links": 4,
-      "careSignals": 1
-    },
-    {
       "fileName": "2026-05-04-체온-1도의-기적-면역력-강화-생활습관-상승법-가이드.md",
       "title": "체온 1도와 면역력: 정상 체온·운동 후 열감·발열 구분하기",
       "score": 6,
@@ -1207,6 +1195,18 @@
       "statistics": 0,
       "links": 3,
       "careSignals": 5
+    },
+    {
+      "fileName": "2026-06-03-지중해식단-건강과-장수를-위한-최고의-선택.md",
+      "title": "지중해식 식사 준비표: 장보기부터 3일 재료 돌려쓰기",
+      "score": 1,
+      "level": "lower",
+      "clinical": 1,
+      "guarantees": 0,
+      "personal": 0,
+      "statistics": 0,
+      "links": 4,
+      "careSignals": 1
     },
     {
       "fileName": "2026-05-06-등산-초보를-위한-안전한-산행과-필수-장비-가이드.md",
