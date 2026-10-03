@@ -349,10 +349,10 @@
       "title": "유산소 운동 기본 원리: 심폐 건강을 위한 주간 실천 가이드",
       "score": 8,
       "level": "review",
-      "clinical": 7,
+      "clinical": 6,
       "guarantees": 0,
       "personal": 0,
-      "statistics": 12,
+      "statistics": 8,
       "links": 7,
       "careSignals": 3
     },
@@ -571,18 +571,6 @@
       "statistics": 0,
       "links": 3,
       "careSignals": 10
-    },
-    {
-      "fileName": "2026-05-28-유산소-운동의-놀라운-건강-혜택과-시작하는-방법-2.md",
-      "title": "유산소 운동 첫 4주: 초보자용 점진적 시작 예시",
-      "score": 6,
-      "level": "lower",
-      "clinical": 2,
-      "guarantees": 1,
-      "personal": 0,
-      "statistics": 2,
-      "links": 4,
-      "careSignals": 2
     },
     {
       "fileName": "2026-03-20-간-때문이-아닌-만성피로-정체-전문가-의학적-견해와.md",
@@ -882,18 +870,6 @@
       "personal": 0,
       "statistics": 3,
       "links": 3,
-      "careSignals": 1
-    },
-    {
-      "fileName": "2026-05-22-유산소-운동의-놀라운-건강-혜택과-시작하는-방법.md",
-      "title": "성인 신체활동 권고 읽는 법: 주간 목표와 시작점",
-      "score": 4,
-      "level": "lower",
-      "clinical": 0,
-      "guarantees": 1,
-      "personal": 0,
-      "statistics": 5,
-      "links": 4,
       "careSignals": 1
     },
     {
@@ -1209,6 +1185,18 @@
       "careSignals": 1
     },
     {
+      "fileName": "2026-05-28-유산소-운동의-놀라운-건강-혜택과-시작하는-방법-2.md",
+      "title": "유산소 운동 초보자 4주 기록 가이드: 유지·조정 판단법",
+      "score": 1,
+      "level": "lower",
+      "clinical": 1,
+      "guarantees": 0,
+      "personal": 0,
+      "statistics": 0,
+      "links": 5,
+      "careSignals": 1
+    },
+    {
       "fileName": "2026-05-08-만성피로-전문가의-의학적-견해와-실질적-분석.md",
       "title": "지속되는 피로와 ME/CFS: 구분, 평가와 활동 관리",
       "score": 1,
@@ -1255,6 +1243,18 @@
       "statistics": 0,
       "links": 2,
       "careSignals": 0
+    },
+    {
+      "fileName": "2026-05-22-유산소-운동의-놀라운-건강-혜택과-시작하는-방법.md",
+      "title": "내게 맞는 유산소 운동 주간 계획표 만들기",
+      "score": 0,
+      "level": "lower",
+      "clinical": 0,
+      "guarantees": 0,
+      "personal": 0,
+      "statistics": 0,
+      "links": 5,
+      "careSignals": 1
     },
     {
       "fileName": "2026-05-06-수영-운동으로-전신-변화-호흡의-중요성을-알아보세.md",
