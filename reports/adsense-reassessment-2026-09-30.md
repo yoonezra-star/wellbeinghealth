@@ -324,7 +324,7 @@
 - 6월 3일 글에서 반복되던 건강 효과·PREDIMED 설명과 일반 교체 목록을 줄이고, 장보기 전에 확인할 식품군, 3일 식사 예시, 남은 곡물·콩 요리·채소의 재사용과 보관 체크로 전환했다. 수량이나 칼로리 처방을 새로 만들지 않았고, 메뉴는 식사 인원·예산·기호에 따라 바꾸는 예시라고 명시했다. 기존 글 주소·이미지 메타데이터를 보존했고 삭제·리디렉션은 없었다.
 - 장보기 원칙은 AHA·WHO 건강 식사 안내와 대조했다. 남은 음식은 상온 방치를 피하고 신속히 냉장·냉동 보관하며 재가열하도록 식품안전나라 자료를 직접 연결했다. 주제 가이드와 세 실천 글 사이에 내부 링크를 추가해 원칙에서 교체·준비 도구로 이동할 수 있게 했다. ([AHA 지중해식 식사](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/mediterranean-diet), [WHO 건강한 식사](https://www.who.int/en/news-room/fact-sheets/detail/healthy-diet), [식품안전나라 보관·재가열 안내](https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?bbs_no=bbs001&menu_no=3120&ntctxt_no=21793))
 - 자동 주장 점검은 106편 중 high 0 / review 32 / lower 74 / 본문 직접 링크 누락 0이다. 정적 내보내기 감사에서 게시물 106편 필수 마크업, 내부 링크 오류 0, 필수 파일 누락 0으로 확인했고 `npm run build`가 정적 경로 118개를 생성했다. 자동 분류는 건강 주장의 사실성 판정이나 AdSense 승인 예측이 아니다.
-- 배포 확인은 콘텐츠 변경 커밋과 사용자 도메인에서 확인한 HTTPS 상태·공개 제목·3일 준비 안내를 배포 완료 후 기록한다.
+- 배포 확인: 콘텐츠 커밋 `b7813f1`의 GitHub Actions `37115436289` Cloudflare Pages 빌드·배포 성공. 6월 3일 준비표, 6월 22일 실천 가이드, 4월 29일 교체법의 기존 URL 세 곳이 모두 HTTPS 200이며, 새 3일 메뉴·식품 보관 출처와 내부 탐색 링크가 공개 HTML에 반영됐다. [GitHub Actions 실행](https://github.com/yoonezra-star/wellbeinghealth/actions/runs/37115436289).
 
 ### 미확인 범위
 
